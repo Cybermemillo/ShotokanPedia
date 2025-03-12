@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiqueta y Filosofía - ShotokanPedia</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Estilos específicos para la página de etiqueta */
+        .etiquette-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .etiquette-card h3 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--light-color);
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .principle {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .principle-number {
+            background: var(--primary-color);
+            color: white;
+            min-width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        
+        .principle-content h4 {
+            margin-top: 0;
+            font-size: 1.3rem;
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+        
+        .principle-content .japanese {
+            display: block;
+            font-style: italic;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .dojo-kun-section {
+            background: var(--light-color);
+            padding: 50px 0;
+        }
+        
+        .quote {
+            font-style: italic;
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+        
+        .quote-author {
+            display: block;
+            text-align: right;
+            font-weight: bold;
+        }
+        
+        .two-column {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+            
+            .principle {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            
+            .principle-number {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>ShotokanPedia</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="katas.html">Katas</a></li>
+                    <li><a href="tecnicas.html">Técnicas</a></li>
+                    <li><a href="diccionario.html">Diccionario</a></li>
+                    <li><a href="historia.html">Historia</a></li>
+                    <li><a href="etiqueta.html" class="active">Etiqueta y Filosofía</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Etiqueta y Filosofía del Karate Shotokan</h2>
+            <p>Principios tradicionales y protocolo en el dojo de karate</p>
+        </div>
+    </section>
+
+    <section class="philosophy-intro">
+        <div class="container">
+            <div class="section-title">
+                <h2>El Camino del Karate</h2>
+            </div>
+            <div class="content">
+                <p>El karate Shotokan no es sólo un conjunto de técnicas físicas, sino un camino de vida (Do) basado en principios filosóficos y éticos profundos. Gichin Funakoshi enfatizaba que el propósito último del karate era el desarrollo del carácter, no simplemente la victoria en el combate.</p>
+                <p>Este aspecto interno del karate se expresa a través de la etiqueta (reishiki), los principios éticos y la actitud mental que se cultiva durante la práctica. Para el verdadero practicante, estos elementos son tan importantes como el dominio técnico.</p>
+                <div class="quote">
+                    "El objetivo final del arte del karate no reside en la victoria o la derrota, sino en la perfección del carácter de sus participantes."
+                    <span class="quote-author">- Gichin Funakoshi</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="dojo-etiquette">
+        <div class="container">
+            <div class="section-title">
+                <h2>Etiqueta en el Dojo</h2>
+            </div>
+            
+            <div class="two-column">
+                <div class="etiquette-card">
+                    <h3>Al Entrar y Salir del Dojo</h3>
+                    <ul>
+                        <li>Realizar un saludo (rei) hacia el frente del dojo (shomen) al entrar y salir.</li>
+                        <li>Quitarse el calzado antes de pisar el tatami y colocarlo ordenadamente.</li>
+                        <li>Llegar con anticipación y prepararse antes del inicio de la clase.</li>
+                        <li>Si se llega tarde, esperar arrodillado en el borde del tatami hasta recibir permiso del instructor para unirse.</li>
+                    </ul>
+                </div>
+                
+                <div class="etiquette-card">
+                    <h3>Durante la Clase</h3>
+                    <ul>
+                        <li>Mantener silencio y atención mientras el instructor explica o demuestra.</li>
+                        <li>Utilizar "Osu" como respuesta respetuosa y para mostrar entendimiento.</li>
+                        <li>Mantener una postura correcta durante las pausas (musubi-dachi o hachiji-dachi).</li>
+                        <li>Si necesita abandonar temporalmente la clase, pedir permiso al instructor.</li>
+                        <li>Mantener el dogi (uniforme) limpio y en buen estado.</li>
+                    </ul>
+                </div>
+                
+                <div class="etiquette-card">
+                    <h3>Saludos y Ceremonial</h3>
+                    <ul>
+                        <li>Al inicio y final de la clase, los estudiantes forman en línea por orden de grado.</li>
+                        <li>El saludo formal incluye: seiza (posición de rodillas), mokuso (meditación breve), y rei (inclinación).</li>
+                        <li>Al practicar con un compañero, saludar antes de comenzar y al terminar.</li>
+                        <li>Mostrar respeto especial hacia los instructores y practicantes de mayor graduación.</li>
+                    </ul>
+                </div>
+                
+                <div class="etiquette-card">
+                    <h3>Comportamiento General</h3>
+                    <ul>
+                        <li>Cuidar la higiene personal y mantener las uñas cortas por seguridad.</li>
+                        <li>Quitarse joyas y relojes durante la práctica.</li>
+                        <li>No comer, beber o mascar chicle en el dojo.</li>
+                        <li>No hablar innecesariamente ni discutir durante la clase.</li>
+                        <li>Tratar el dojo como un lugar sagrado para el aprendizaje y la autosuperación.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="dojo-kun-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>El Dojo Kun</h2>
+                <p>Los cinco preceptos fundamentales del karate Shotokan</p>
+            </div>
+            
+            <div class="dojo-kun">
+                <div class="principle">
+                    <div class="principle-number">1</div>
+                    <div class="principle-content">
+                        <h4>Esforzarse por la perfección del carácter</h4>
+                        <span class="japanese">人格完成に努むること (Hitotsu, jinkaku kansei ni tsutomuru koto)</span>
+                        <p>Este primer precepto sitúa el desarrollo personal como objetivo principal del karate. El entrenamiento debe conducirnos a mejorar como personas, no solo como artistas marciales.</p>
+                    </div>
+                </div>
+                
+                <div class="principle">
+                    <div class="principle-number">2</div>
+                    <div class="principle-content">
+                        <h4>Ser fiel y defender los caminos de la sinceridad</h4>
+                        <span class="japanese">誠の道を守ること (Hitotsu, makoto no michi wo mamoru koto)</span>
+                        <p>La honestidad y sinceridad deben guiar nuestras acciones, dentro y fuera del dojo. La integridad personal es fundamental para el verdadero karateca.</p>
+                    </div>
+                </div>
+                
+                <div class="principle">
+                    <div class="principle-number">3</div>
+                    <div class="principle-content">
+                        <h4>Cultivar el espíritu de esfuerzo</h4>
+                        <span class="japanese">努力の精神を養うこと (Hitotsu, doryoku no seishin wo yashinau koto)</span>
+                        <p>El progreso en karate requiere perseverancia y dedicación constante. Este principio nos recuerda que la maestría solo se alcanza a través del trabajo duro y continuo.</p>
+                    </div>
+                </div>
+                
+                <div class="principle">
+                    <div class="principle-number">4</div>
+                    <div class="principle-content">
+                        <h4>Respetar a los demás y las reglas de cortesía</h4>
+                        <span class="japanese">礼儀を重んずること (Hitotsu, reigi wo omonzuru koto)</span>
+                        <p>El respeto y la cortesía son fundamentales en el karate. Este precepto va más allá del simple protocolo y abarca una actitud de consideración y respeto hacia todos los seres humanos.</p>
+                    </div>
+                </div>
+                
+                <div class="principle">
+                    <div class="principle-number">5</div>
+                    <div class="principle-content">
+                        <h4>Abstenerse de conductas violentas</h4>
+                        <span class="japanese">血気の勇を戒むること (Hitotsu, kekki no yu wo imashimuru koto)</span>
+                        <p>Este último precepto enfatiza el autocontrol y la actitud pacífica. Aunque se entrenan técnicas de combate, el karateca debe evitar la violencia y usar sus habilidades solo cuando sea absolutamente necesario.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="philosophy-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Principios Filosóficos del Karate</h2>
+            </div>
+            
+            <div class="content">
+                <h3>Karate Ni Sente Nashi</h3>
+                <p class="japanese" style="text-align: center; font-size: 1.5rem; margin: 20px 0;">空手に先手なし</p>
+                <p>"En el karate no existe el primer ataque". Este principio, uno de los más importantes legados de Funakoshi, enfatiza que el karate es fundamentalmente un arte de defensa, no de agresión. También puede interpretarse de manera más profunda como una actitud hacia la vida: el karateca no debe ser el origen de ningún conflicto, ya sea físico o verbal.</p>
+                
+                <h3>Zanshin</h3>
+                <p class="japanese" style="text-align: center; font-size: 1.5rem; margin: 20px 0;">残心</p>
+                <p>Estado de alerta o conciencia continua. En el entrenamiento, zanshin significa mantener la atención y postura incluso después de completar una técnica. En la vida cotidiana, representa una actitud de consciencia plena y preparación mental constante.</p>
+                
+                <h3>Mushin</h3>
+                <p class="japanese" style="text-align: center; font-size: 1.5rem; margin: 20px 0;">無心</p>
+                <p>"Mente vacía". Estado mental en el que se actúa de manera intuitiva y fluida, sin pensamientos que obstaculicen la acción. Se logra tras años de entrenamiento cuando las técnicas se han integrado hasta el punto de volverse naturales y automáticas.</p>
+                
+                <h3>Kime</h3>
+                <p class="japanese" style="text-align: center; font-size: 1.5rem; margin: 20px 0;">決め</p>
+                <p>Enfoque total de energía física y mental en un instante preciso. En términos físicos, se refiere a la concentración de potencia en el momento del impacto. En un sentido más amplio, simboliza la determinación y compromiso absoluto con cada acción que emprendemos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="twenty-precepts">
+        <div class="container">
+            <div class="section-title">
+                <h2>Los Veinte Preceptos del Karate</h2>
+                <p>Niju Kun: Las 20 máximas de Gichin Funakoshi</p>
+            </div>
+            
+            <div class="quote" style="margin-bottom: 50px;">
+                "El karate va más allá del dojo"
+                <span class="quote-author">- Precepto Nº1 de Funakoshi</span>
+            </div>
+            
+            <div class="content">
+                <p>Además del Dojo Kun, Funakoshi estableció veinte principios conocidos como "Niju Kun" que ofrecen una guía más detallada para la práctica y la vida. Estos preceptos abordan aspectos técnicos, mentales y filosóficos del karate, y siguen siendo estudiados por karatecas de todo el mundo como parte integral de su formación.</p>
+                
+                <p>Algunos de los preceptos más significativos incluyen:</p>
+                
+                <ul style="max-width: 800px; margin: 30px auto; padding-left: 20px;">
+                    <li><strong>Karate wa gi no tasuke: </strong> El karate está al servicio de la justicia.</li>
+                    <li><strong>Karate ni sente nashi: </strong> En el karate no existe el primer ataque.</li>
+                    <li><strong>Mazu jiko wo shire, shikashite ta wo shire: </strong> Conócete a ti mismo primero y luego a los demás.</li>
+                    <li><strong>Tekki ni katsu: </strong> La mente sobre la técnica.</li>
+                    <li><strong>Kokoro wa hanatan koto wo yosu: </strong> Libera tu mente.</li>
+                    <li><strong>Wazawai wa ketai ni seyo: </strong> Los accidentes surgen de la negligencia.</li>
+                    <li><strong>Karate no keiko wa issho de aru: </strong> El karate es un estudio de toda la vida.</li>
+                </ul>
+                
+                <p>Estos preceptos nos recuerdan que el karate es mucho más que un conjunto de técnicas de combate: es un camino integral de desarrollo humano que abarca todos los aspectos de la vida.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>ShotokanPedia</h3>
+                    <p>Enciclopedia de Karate Shotokan JKA</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces rápidos</h4>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="katas.html">Katas</a></li>
+                        <li><a href="diccionario.html">Diccionario</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Síguenos</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 ShotokanPedia. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

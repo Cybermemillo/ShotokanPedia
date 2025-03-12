@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Técnicas - ShotokanPedia</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Estilos específicos para técnicas */
+        .technique-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 30px;
+            transition: transform 0.3s;
+        }
+
+        .technique-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .technique-card .image {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .technique-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .technique-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .technique-card .content {
+            padding: 20px;
+        }
+
+        .technique-card h3 {
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        .technique-card .japanese-name {
+            color: var(--secondary-color);
+            font-style: italic;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .techniques-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .technique-category {
+            margin-bottom: 60px;
+        }
+
+        .technique-category h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: var(--secondary-color);
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>ShotokanPedia</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="katas.html">Katas</a></li>
+                    <li><a href="tecnicas.html" class="active">Técnicas</a></li>
+                    <li><a href="diccionario.html">Diccionario</a></li>
+                    <li><a href="historia.html">Historia</a></li>
+                    <li><a href="etiqueta.html">Etiqueta y Filosofía</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Técnicas de Karate Shotokan</h2>
+            <p>Explorador completo de técnicas tradicionales</p>
+        </div>
+    </section>
+
+    <section class="techniques-section">
+        <div class="container">
+            <div class="search-filters">
+                <div class="search-bar">
+                    <input type="text" id="technique-search" placeholder="Buscar técnica...">
+                    <i class="fas fa-search"></i>
+                </div>
+                
+                <div class="filter-groups">
+                    <div class="filter-group">
+                        <h3>Tipo Principal</h3>
+                        <button class="filter-btn active" data-type="all">Todos</button>
+                        <button class="filter-btn" data-type="attack">Ataques</button>
+                        <button class="filter-btn" data-type="defense">Defensas</button>
+                        <button class="filter-btn" data-type="stance">Posiciones</button>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Categoría</h3>
+                        <button class="filter-btn" data-category="tsuki-waza">Tsuki Waza (Puños)</button>
+                        <button class="filter-btn" data-category="geri-waza">Geri Waza (Patadas)</button>
+                        <button class="filter-btn" data-category="uke-waza">Uke Waza (Bloqueos)</button>
+                        <button class="filter-btn" data-category="uchi-waza">Uchi Waza (Golpes)</button>
+                        <button class="filter-btn" data-category="dachi-waza">Dachi Waza (Posiciones)</button>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Nivel</h3>
+                        <button class="filter-btn" data-level="basic">Básico</button>
+                        <button class="filter-btn" data-level="intermediate">Intermedio</button>
+                        <button class="filter-btn" data-level="advanced">Avanzado</button>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Altura</h3>
+                        <button class="filter-btn" data-height="jodan">Jodan (Alto)</button>
+                        <button class="filter-btn" data-height="chudan">Chudan (Medio)</button>
+                        <button class="filter-btn" data-height="gedan">Gedan (Bajo)</button>
+                    </div>
+                </div>
+
+                <div class="active-filters">
+                    <h3>Filtros activos:</h3>
+                    <div class="filter-tags"></div>
+                    <button class="clear-filters">Limpiar filtros</button>
+                </div>
+            </div>
+
+            <div class="techniques-grid">
+                <!-- Las técnicas se cargarán dinámicamente aquí -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal para detalles de técnica -->
+    <div id="technique-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="technique-detail-content">
+                <!-- El contenido se insertará dinámicamente -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>ShotokanPedia</h3>
+                    <p>Enciclopedia de Karate Shotokan JKA</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces rápidos</h4>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="katas.html">Katas</a></li>
+                        <li><a href="diccionario.html">Diccionario</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Síguenos</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 ShotokanPedia. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/techniques.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

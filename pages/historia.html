@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia - ShotokanPedia</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Estilos específicos para la página de historia */
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+        
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 3px;
+            background-color: var(--primary-color);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -1.5px;
+        }
+        
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+        }
+        
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border: 4px solid var(--primary-color);
+            border-radius: 50%;
+            top: 15px;
+            z-index: 1;
+        }
+        
+        .left {
+            left: 0;
+        }
+        
+        .right {
+            left: 50%;
+        }
+        
+        .left::after {
+            right: -12px;
+        }
+        
+        .right::after {
+            left: -12px;
+        }
+        
+        .timeline-content {
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .timeline-content h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+        
+        .timeline-content .date {
+            color: var(--secondary-color);
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        .profile {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+            margin-bottom: 40px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .profile-image {
+            width: 200px;
+            min-width: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        
+        .profile-image img {
+            width: 100%;
+            display: block;
+        }
+        
+        .profile-content h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        
+        .profile-content .dates {
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+            font-style: italic;
+        }
+        
+        /* Responsive */
+        @media screen and (max-width: 768px) {
+            .timeline::after {
+                left: 31px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            .timeline-item::after {
+                left: 19px;
+            }
+            
+            .left::after, .right::after {
+                left: 19px;
+            }
+            
+            .right {
+                left: 0;
+            }
+            
+            .profile {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            
+            .profile-image {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>ShotokanPedia</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="katas.html">Katas</a></li>
+                    <li><a href="tecnicas.html">Técnicas</a></li>
+                    <li><a href="diccionario.html">Diccionario</a></li>
+                    <li><a href="historia.html" class="active">Historia</a></li>
+                    <li><a href="etiqueta.html">Etiqueta y Filosofía</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Historia del Karate Shotokan</h2>
+            <p>Los orígenes y la evolución del estilo Shotokan y la JKA</p>
+        </div>
+    </section>
+
+    <section class="history-intro">
+        <div class="container">
+            <div class="section-title">
+                <h2>Los Orígenes del Karate</h2>
+            </div>
+            <div class="content">
+                <p>El karate se originó en Okinawa, una isla que hoy forma parte de Japón pero que históricamente tuvo una gran influencia de la cultura china. Durante siglos, Okinawa fue un importante centro comercial entre Japón, China y el sureste asiático, lo que facilitó el intercambio cultural y marcial.</p>
+                <p>En sus inicios, el arte marcial practicado en Okinawa se denominaba "te" (mano) y se desarrolló como método de defensa personal en una época en la que las armas estaban prohibidas. Se cree que el "te" se mezcló con el kung fu chino para formar lo que más tarde se conocería como "tode" o "karate" (mano china).</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="founder">
+        <div class="container">
+            <div class="section-title">
+                <h2>Gichin Funakoshi: El Padre del Karate Moderno</h2>
+            </div>
+            
+            <div class="profile">
+                <div class="profile-image">
+                    <img src="../img/history/funakoshi.jpg" alt="Gichin Funakoshi">
+                </div>
+                <div class="profile-content">
+                    <h3>Gichin Funakoshi</h3>
+                    <div class="dates">1868 - 1957</div>
+                    <p>Gichin Funakoshi es ampliamente considerado como el padre del karate moderno. Nacido en Shuri, Okinawa, dedicó su vida a la práctica y enseñanza del karate. En 1922, fue invitado a presentar el karate en Tokio, marcando el comienzo de la difusión del arte marcial en Japón central.</p>
+                    <p>Funakoshi cambió el significado de "karate" de "mano china" a "mano vacía" (空手), enfatizando el aspecto filosófico y espiritual del arte. Fundó el estilo que eventualmente se conocería como Shotokan, nombre derivado de su pseudónimo literario "Shoto" (松涛), que significa "oleaje de pinos".</p>
+                    <p>Bajo su liderazgo, el karate pasó de ser un arte marcial local de Okinawa a ser reconocido oficialmente en Japón, sentando las bases para su difusión mundial posterior.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="timeline-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Cronología del Karate Shotokan</h2>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>Orígenes en Okinawa</h3>
+                        <span class="date">Siglos XVII-XIX</span>
+                        <p>Desarrollo del "te" en Okinawa bajo la influencia del kung fu chino. Práctica en secreto durante la prohibición de armas impuesta por el clan Satsuma.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>Introducción del Karate en las Escuelas</h3>
+                        <span class="date">1902</span>
+                        <p>Funakoshi introduce el karate en el sistema escolar de Okinawa como parte de la educación física.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>Primera Demostración en Japón</h3>
+                        <span class="date">1922</span>
+                        <p>Funakoshi realiza la primera demostración pública de karate en Tokio, invitado por el Ministerio de Educación.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>Publicación de "Karate-Do Kyohan"</h3>
+                        <span class="date">1935</span>
+                        <p>Funakoshi publica su obra maestra "Karate-Do Kyohan", considerada la biblia del karate Shotokan.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>Fundación del Dojo Shotokan</h3>
+                        <span class="date">1936</span>
+                        <p>Se construye el primer dojo dedicado específicamente al karate en Tokio, llamado "Shotokan" en honor al pseudónimo de Funakoshi.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>Fundación de la JKA</h3>
+                        <span class="date">1949</span>
+                        <p>Se establece la Japan Karate Association (JKA), la primera organización de karate con reconocimiento oficial del gobierno japonés.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>Fallecimiento de Funakoshi</h3>
+                        <span class="date">1957</span>
+                        <p>Gichin Funakoshi fallece a los 88 años, dejando un legado que continúa hasta nuestros días.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>Expansión Internacional</h3>
+                        <span class="date">1960s-1970s</span>
+                        <p>Instructores de la JKA como Masatoshi Nakayama, Hirokazu Kanazawa y Taiji Kase difunden el Shotokan por todo el mundo.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>Karate Deportivo</h3>
+                        <span class="date">1970-presente</span>
+                        <p>Desarrollo del karate como deporte competitivo, con la celebración de campeonatos mundiales y su inclusión en eventos multideportivos importantes.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>Karate Olímpico</h3>
+                        <span class="date">2020-2021</span>
+                        <p>El karate hace su debut como deporte olímpico en los Juegos de Tokio, marcando un hito en su reconocimiento mundial.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="masters">
+        <div class="container">
+            <div class="section-title">
+                <h2>Grandes Maestros del Shotokan</h2>
+            </div>
+            
+            <div class="profile">
+                <div class="profile-image">
+                    <img src="../img/history/nakayama.jpg" alt="Masatoshi Nakayama">
+                </div>
+                <div class="profile-content">
+                    <h3>Masatoshi Nakayama</h3>
+                    <div class="dates">1913 - 1987</div>
+                    <p>Discípulo directo de Funakoshi, Nakayama se convirtió en el director técnico de la JKA y fue instrumental en la codificación y sistematización del estilo Shotokan. Desarrolló el sistema de enseñanza que sigue siendo la base de la instrucción en la JKA, y produjo la serie "Best Karate" que documentó técnicas y katas para generaciones futuras.</p>
+                </div>
+            </div>
+            
+            <div class="profile">
+                <div class="profile-image">
+                    <img src="../img/history/kanazawa.jpg" alt="Hirokazu Kanazawa">
+                </div>
+                <div class="profile-content">
+                    <h3>Hirokazu Kanazawa</h3>
+                    <div class="dates">1931 - 2019</div>
+                    <p>Uno de los karatecas más respetados del siglo XX, Kanazawa fue campeón del primer campeonato de la JKA en 1957. Fundó la Shotokan Karate-Do Internacional Federation (SKIF) y viajó extensamente difundiendo el karate Shotokan por todo el mundo, contribuyendo enormemente a su popularización.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="legacy">
+        <div class="container">
+            <div class="section-title">
+                <h2>El Legado del Shotokan</h2>
+            </div>
+            <div class="content">
+                <p>El legado del karate Shotokan va mucho más allá de las técnicas de combate. Funakoshi enfatizaba que el objetivo final del karate no era solo la victoria en el combate, sino el perfeccionamiento del carácter. Su lema "Karate Ni Sente Nashi" (空手に先手なし - "En el karate no existe el primer ataque") refleja la filosofía de moderación y autocontrol que impregna este arte marcial.</p>
+                <p>Hoy en día, el Shotokan es practicado por millones de personas en todo el mundo, siendo uno de los estilos de karate más influyentes y difundidos. La JKA continúa preservando las enseñanzas y técnicas tradicionales, mientras que numerosas organizaciones derivadas difunden sus propias interpretaciones del estilo.</p>
+                <p>El karate Shotokan ha trascendido fronteras culturales y geográficas para convertirse en un verdadero fenómeno global, pero mantiene las raíces y principios fundamentales establecidos por su fundador hace más de un siglo.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>ShotokanPedia</h3>
+                    <p>Enciclopedia de Karate Shotokan JKA</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces rápidos</h4>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="katas.html">Katas</a></li>
+                        <li><a href="diccionario.html">Diccionario</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Síguenos</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 ShotokanPedia. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

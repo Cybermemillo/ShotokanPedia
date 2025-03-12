@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katas - ShotokanPedia</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>ShotokanPedia</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="katas.html" class="active">Katas</a></li>
+                    <li><a href="tecnicas.html">Técnicas</a></li>
+                    <li><a href="diccionario.html">Diccionario</a></li>
+                    <li><a href="historia.html">Historia</a></li>
+                    <li><a href="etiqueta.html">Etiqueta y Filosofía</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Katas de Karate Shotokan</h2>
+            <p>Los katas son secuencias de movimientos preestablecidos que simulan un combate contra varios oponentes imaginarios</p>
+        </div>
+    </section>
+
+    <section class="kata-info">
+        <div class="container">
+            <div class="section-title">
+                <h2>¿Qué son los Katas?</h2>
+                <div class="japanese-title">型</div>
+            </div>
+            <div class="kata-intro-content">
+                <div class="kata-intro-text">
+                    <div class="scroll-design">
+                        <div class="scroll-content">
+                            <p class="highlight-quote">"Los katas son la esencia del karate, el legado de siglos de experiencia y sabiduría marcial."</p>
+                            <p>Los katas (型 o 形) son secuencias de movimientos preestablecidos que representan un combate contra adversarios imaginarios. Son la columna vertebral del karate tradicional, transmitidos de generación en generación.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="kata-principles">
+                    <div class="principle-card">
+                        <div class="principle-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Mente</h3>
+                        <p>Desarrollo de la concentración y el control mental</p>
+                    </div>
+                    <div class="principle-card">
+                        <div class="principle-icon">
+                            <i class="fas fa-fist-raised"></i>
+                        </div>
+                        <h3>Técnica</h3>
+                        <p>Perfeccionamiento de movimientos y posiciones</p>
+                    </div>
+                    <div class="principle-card">
+                        <div class="principle-icon">
+                            <i class="fas fa-yin-yang"></i>
+                        </div>
+                        <h3>Espíritu</h3>
+                        <p>Cultivo del espíritu marcial y la disciplina</p>
+                    </div>
+                </div>
+                <div class="kata-historical">
+                    <div class="historical-image">
+                        <img src="../img/old-karate-master.jpg" alt="Antiguo maestro de karate">
+                        <div class="image-caption">Maestro Gichin Funakoshi, fundador del estilo Shotokan</div>
+                    </div>
+                    <div class="historical-text">
+                        <h3>Contexto Histórico</h3>
+                        <p>Los katas tienen sus raíces en la antigua Okinawa, donde los maestros desarrollaron estas formas como un método para preservar y transmitir las técnicas de combate. En el estilo Shotokan, el Maestro Funakoshi sistematizó y adaptó estos katas para la enseñanza moderna.</p>
+                        <div class="kata-stats">
+                            <div class="stat">
+                                <span class="number">26</span>
+                                <span class="label">Katas Oficiales</span>
+                            </div>
+                            <div class="stat">
+                                <span class="number">3</span>
+                                <span class="label">Niveles</span>
+                            </div>
+                            <div class="stat">
+                                <span class="number">100+</span>
+                                <span class="label">Años de Historia</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="decorative-pattern left"></div>
+        <div class="decorative-pattern right"></div>
+    </section>
+
+    <section class="kata-selection">
+        <div class="container">
+            <div class="section-title">
+                <h2>Explorar Katas</h2>
+            </div>
+            <div class="kata-buttons">
+                <button class="kata-category-btn" data-category="basic">Katas Básicos</button>
+                <button class="kata-category-btn" data-category="intermediate">Katas Intermedios</button>
+                <button class="kata-category-btn" data-category="advanced">Katas Avanzados</button>
+            </div>
+            
+            <div class="kata-grid basic-katas">
+                <!-- Katas Básicos (Shitei Kata) -->
+                <button class="kata-btn" data-kata="taikyoku-shodan">Taikyoku Shodan</button>
+                <button class="kata-btn" data-kata="taikyoku-nidan">Taikyoku Nidan</button>
+                <button class="kata-btn" data-kata="taikyoku-sandan">Taikyoku Sandan</button>
+                <button class="kata-btn" data-kata="heian-shodan">Heian Shodan</button>
+                <button class="kata-btn" data-kata="heian-nidan">Heian Nidan</button>
+                <button class="kata-btn" data-kata="heian-sandan">Heian Sandan</button>
+                <button class="kata-btn" data-kata="heian-yondan">Heian Yondan</button>
+                <button class="kata-btn" data-kata="heian-godan">Heian Godan</button>
+                <button class="kata-btn" data-kata="tekki-shodan">Tekki Shodan</button>
+            </div>
+
+            <div class="kata-grid intermediate-katas" style="display: none;">
+                <!-- Katas Intermedios (Sentei Kata) -->
+                <button class="kata-btn" data-kata="bassai-dai">Bassai Dai</button>
+                <button class="kata-btn" data-kata="kanku-dai">Kanku Dai</button>
+                <button class="kata-btn" data-kata="jion">Jion</button>
+                <button class="kata-btn" data-kata="enpi">Enpi</button>
+                <button class="kata-btn" data-kata="hangetsu">Hangetsu</button>
+                <button class="kata-btn" data-kata="tekki-nidan">Tekki Nidan</button>
+                <button class="kata-btn" data-kata="tekki-sandan">Tekki Sandan</button>
+            </div>
+
+            <div class="kata-grid advanced-katas" style="display: none;">
+                <!-- Katas Avanzados -->
+                <button class="kata-btn" data-kata="bassai-sho">Bassai Sho</button>
+                <button class="kata-btn" data-kata="kanku-sho">Kanku Sho</button>
+                <button class="kata-btn" data-kata="nijushiho">Nijushiho</button>
+                <button class="kata-btn" data-kata="sochin">Sochin</button>
+                <button class="kata-btn" data-kata="gojushiho-dai">Gojushiho Dai</button>
+                <button class="kata-btn" data-kata="gojushiho-sho">Gojushiho Sho</button>
+                <button class="kata-btn" data-kata="chinte">Chinte</button>
+                <button class="kata-btn" data-kata="unsu">Unsu</button>
+                <button class="kata-btn" data-kata="meikyo">Meikyo</button>
+                <button class="kata-btn" data-kata="wankan">Wankan</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="kata-details" class="kata-detail" style="display: none;">
+        <!-- El contenido del kata se insertará dinámicamente aquí -->
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>ShotokanPedia</h3>
+                    <p>Enciclopedia de Karate Shotokan JKA</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces rápidos</h4>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="katas.html">Katas</a></li>
+                        <li><a href="diccionario.html">Diccionario</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 ShotokanPedia. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
