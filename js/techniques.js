@@ -1,226 +1,334 @@
+// Base de datos de técnicas de karate Shotokan
 const techniquesData = {
-    'choku-zuki': {
-        name: 'Choku Zuki',
-        japanese: '直突き',
-        type: 'attack',
+    // DACHI WAZA - POSICIONES BAJAS
+    'zenkutsu-dachi': {
+        name: 'Zenkutsu Dachi',
+        japanese: '前屈立ち',
+        category: 'dachi-waza',
+        subcategory: 'posicion-baja',
+        level: 'basic',
+        description: 'Posición adelantada, o de ataque, Posición del arquero.',
+        details: [
+            'Dimensiones: Anchura = 1 cadera; Longitud = 2 caderas',
+            'Colocación de las piernas: pies paralelos apoyándose la planta completa de cada pie. Rodilla adelantada flexionada y pierna atrasada estirada.',
+            'Distribución del peso: 60% del peso en la pierna adelantada y 40% en la atrasada.',
+            'Cadera: hacia delante con ayuda de la pierna de atrás',
+            'Aplicación: normalmente golpes directos, aunque también defensas, patadas y golpes circulares.'
+        ],
+        tags: ['posición', 'básico', 'adelantada', 'ataque']
+    },
+    'kokutsu-dachi': {
+        name: 'Kokutsu Dachi',
+        japanese: '後屈立ち',
+        category: 'dachi-waza',
+        subcategory: 'posicion-baja',
+        level: 'intermediate',
+        description: 'Posición retrasada, o de defensa en retroceso.',
+        details: [
+            'Dimensiones: Anchura = 0; Longitud = 2 caderas',
+            'Colocación de las piernas: pies en línea, el de delante en la dirección de la técnica y el de detrás perpendicular a ésta.',
+            'Distribución del peso: 60% del peso en la pierna atrasada y 40% en la pierna adelantada.',
+            'Cadera: hacia atrás con ayuda de la pierna adelantada',
+            'Aplicación: posición típica de defensas.'
+        ],
+        tags: ['posición', 'intermedio', 'retrasada', 'defensa']
+    },
+    'kiba-dachi': {
+        name: 'Kiba Dachi',
+        japanese: '騎馬立ち',
+        category: 'dachi-waza',
+        subcategory: 'posicion-baja',
+        level: 'basic',
+        description: 'Posición del jinete.',
+        details: [
+            'Dimensiones: Anchura = 2 caderas; Longitud = 0',
+            'Colocación de las piernas: piernas abiertas lateralmente, rodillas flexionadas en ángulo recto, pies paralelos',
+            'Distribución del peso: 50% del peso en cada pierna',
+            'Cadera: hacia delante',
+            'Aplicación: variada (ataques, defensas, patadas)'
+        ],
+        tags: ['posición', 'básico', 'estable', 'lateral']
+    },
+    
+    // UKE WAZA - DEFENSAS CON UN BRAZO
+    'gedan-barai': {
+        name: 'Gedan Barai',
+        japanese: '下段払い',
+        category: 'uke-waza',
+        subcategory: 'un-brazo',
+        level: 'basic',
+        height: 'gedan',
+        description: 'Defensa baja hacia el exterior para defender patadas u otros ataques gedan.',
+        details: [
+            'Se realiza un movimiento descendente y hacia el exterior con el antebrazo',
+            'La mano que ejecuta parte desde el hombro contrario',
+            'Contacto con la parte exterior del antebrazo'
+        ],
+        tags: ['defensa', 'básico', 'bajo', 'barrido']
+    },
+    'age-uke': {
+        name: 'Age Uke',
+        japanese: '上げ受け',
+        category: 'uke-waza',
+        subcategory: 'un-brazo',
+        level: 'basic',
+        height: 'jodan',
+        description: 'Defensa alta hacia arriba para bloquear ataques dirigidos a la cabeza.',
+        details: [
+            'Movimiento ascendente con rotación del antebrazo',
+            'Contacto con la parte exterior del antebrazo',
+            'Posición final con el puño a la altura de la frente'
+        ],
+        tags: ['defensa', 'básico', 'alto', 'ascendente']
+    },
+    
+    // TSUKI WAZA - GOLPES DIRECTOS
+    'oi-tsuki': {
+        name: 'Oi Tsuki',
+        japanese: '追い突き',
         category: 'tsuki-waza',
+        subcategory: 'mano-cerrada',
+        level: 'basic', 
+        height: ['chudan', 'jodan'],
+        description: 'Golpe de puño con la mano de la pierna adelantada.',
+        details: [
+            'Se avanza con la pierna y se golpea con el puño del mismo lado',
+            'La cadera gira completamente hacia el frente',
+            'El puño gira al final del movimiento quedando los nudillos hacia abajo'
+        ],
+        tags: ['ataque', 'puño', 'básico', 'directo']
+    },
+    'gyaku-tsuki': {
+        name: 'Gyaku Tsuki',
+        japanese: '逆突き',
+        category: 'tsuki-waza',
+        subcategory: 'mano-cerrada',
+        level: 'basic', 
+        height: ['chudan', 'jodan'],
+        description: 'Golpe de puño con la mano contraria a la pierna adelantada.',
+        details: [
+            'Se golpea con el puño contrario a la pierna adelantada',
+            'Utiliza la rotación de la cadera para generar potencia',
+            'Considerada una de las técnicas más efectivas del karate'
+        ],
+        tags: ['ataque', 'puño', 'básico', 'directo']
+    },
+    
+    // UCHI WAZA - GOLPES INDIRECTOS
+    'shuto-uchi': {
+        name: 'Shuto Uchi',
+        japanese: '手刀打ち',
+        category: 'uchi-waza',
+        subcategory: 'mano-abierta',
+        level: 'intermediate',
+        height: ['chudan', 'jodan'],
+        description: 'Golpe con el canto externo de la mano.',
+        details: [
+            'Se golpea con el canto externo de la mano (lado del meñique)',
+            'Utiliza un movimiento circular desde el hombro opuesto',
+            'La mano permanece extendida con los dedos juntos'
+        ],
+        tags: ['ataque', 'indirecto', 'mano abierta', 'circular']
+    },
+    
+    // KERI WAZA - PATADAS
+    'mae-geri': {
+        name: 'Mae Geri',
+        japanese: '前蹴り',
+        category: 'keri-waza',
+        subcategory: 'basicas',
         level: 'basic',
         height: ['chudan', 'jodan'],
-        description: 'Golpe directo de puño desde la posición natural',
-        keyPoints: [
-            'Alineación correcta del puño',
-            'Rotación completa en el impacto',
-            'Retracción rápida'
+        description: 'Patada frontal directa.',
+        details: [
+            'Se levanta la rodilla y se extiende la pierna hacia adelante',
+            'Se golpea con la parte anterior de la planta del pie (koshi) o con los dedos del pie',
+            'Puede ser keage (ascendente y percutante) o kekomi (penetrante)'
         ],
-        commonMistakes: [
-            'Elevar el hombro',
-            'No rotar completamente el puño',
-            'Tensar demasiado el brazo que no golpea'
+        tags: ['patada', 'básico', 'frontal', 'directa']
+    },
+    'yoko-geri': {
+        name: 'Yoko Geri',
+        japanese: '横蹴り',
+        category: 'keri-waza',
+        subcategory: 'basicas',
+        level: 'intermediate',
+        height: ['chudan', 'jodan'],
+        description: 'Patada lateral.',
+        details: [
+            'La rodilla se levanta y luego se extiende la pierna hacia el lado',
+            'Se golpea con el canto externo del pie (sokuto)',
+            'Existen dos variantes principales: keage (ascendente) y kekomi (penetrante)'
         ],
-        tags: ['puño', 'básico', 'golpe directo', 'zuki'],
-        relatedTechniques: ['oi-zuki', 'gyaku-zuki'],
-        videoId: 'technique-video-id'
+        tags: ['patada', 'intermedio', 'lateral', 'potente']
     }
-    // ... más técnicas
+    // Más técnicas serían agregadas siguiendo el mismo patrón
 };
 
-$(document).ready(function() {
-    let activeFilters = new Set();
-    let searchTerm = '';
-
-    // Función de búsqueda y filtrado
-    function filterTechniques() {
-        const filteredTechniques = Object.entries(techniquesData).filter(([id, technique]) => {
-            // Comprobar término de búsqueda
-            if (searchTerm && !technique.name.toLowerCase().includes(searchTerm.toLowerCase()) &&
-                !technique.japanese.toLowerCase().includes(searchTerm.toLowerCase())) {
-                return false;
-            }
-
-            // Comprobar filtros activos
-            if (activeFilters.size > 0) {
-                return Array.from(activeFilters).every(filter => {
-                    const [type, value] = filter.split(':');
-                    switch (type) {
-                        case 'type':
-                            return value === 'all' || technique.type === value;
-                        case 'category':
-                            return technique.category === value;
-                        case 'level':
-                            return technique.level === value;
-                        case 'height':
-                            return technique.height.includes(value);
-                        default:
-                            return true;
-                    }
-                });
-            }
-            return true;
-        });
-
-        displayTechniques(filteredTechniques);
-        updateActiveFilters();
-    }
-
-    // Mostrar técnicas filtradas
-    function displayTechniques(techniques) {
-        const grid = $('.techniques-grid');
-        grid.empty();
-
-        techniques.forEach(([id, technique]) => {
-            grid.append(`
-                <div class="technique-card" data-id="${id}">
-                    <div class="technique-header">
-                        <h3>${technique.name}</h3>
-                        <span class="japanese">${technique.japanese}</span>
-                    </div>
-                    <div class="technique-tags">
-                        ${technique.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
-                    </div>
-                    <p>${technique.description}</p>
-                    <button class="details-btn">Ver detalles</button>
-                </div>
-            `);
-        });
-    }
-
-    // Actualizar filtros activos
-    function updateActiveFilters() {
-        const filterTags = $('.filter-tags');
-        filterTags.empty();
-
-        activeFilters.forEach(filter => {
-            const [type, value] = filter.split(':');
-            filterTags.append(`
-                <span class="filter-tag" data-filter="${filter}">
-                    ${value}
-                    <i class="fas fa-times"></i>
-                </span>
-            `);
-        });
-    }
-
-    // Event listeners
-    $('#technique-search').on('input', function() {
-        searchTerm = $(this).val();
-        filterTechniques();
-    });
-
-    $('.filter-btn').click(function() {
-        const btn = $(this);
-        const filter = `${btn.data('type') || btn.data('category') || btn.data('level') || btn.data('height')}:${btn.text().toLowerCase()}`;
-
-        if (btn.hasClass('active')) {
-            btn.removeClass('active');
-            activeFilters.delete(filter);
-        } else {
-            btn.addClass('active');
-            activeFilters.add(filter);
-        }
-
-        filterTechniques();
-    });
-
-    $('.clear-filters').click(function() {
-        activeFilters.clear();
-        $('.filter-btn').removeClass('active');
-        $('#technique-search').val('');
-        searchTerm = '';
-        filterTechniques();
-    });
-
-    // Delegación de eventos para tags de filtro
-    $('.filter-tags').on('click', '.filter-tag', function() {
-        const filter = $(this).data('filter');
-        activeFilters.delete(filter);
-        $(`.filter-btn[data-${filter.split(':')[0]}="${filter.split(':')[1]}"]`).removeClass('active');
-        filterTechniques();
-    });
-
-    // Función para mostrar el modal con los detalles de la técnica
-    function showTechniqueDetails(id) {
-        const technique = techniquesData[id];
-        if (!technique) return;
-
-        const modalContent = `
-            <div class="technique-detail-header">
-                <h2>${technique.name}</h2>
-                <span class="japanese">${technique.japanese}</span>
+// Función para crear una tarjeta de técnica
+function createTechniqueCard(id, technique) {
+    return `
+        <div class="technique-card" data-id="${id}" data-category="${technique.category}" data-subcategory="${technique.subcategory}" data-level="${technique.level}">
+            <div class="technique-header">
+                <h3>${technique.name} <span class="japanese">${technique.japanese}</span></h3>
+            </div>
+            <div class="technique-content">
+                <p>${technique.description}</p>
                 <div class="technique-tags">
                     ${technique.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
                 </div>
             </div>
-
-            <div class="technique-detail-grid">
-                <div class="technique-detail-section">
-                    <h4>Puntos Clave</h4>
-                    <ul class="key-points-list">
-                        ${technique.keyPoints.map(point => `<li>${point}</li>`).join('')}
-                    </ul>
-                </div>
-
-                <div class="technique-detail-section">
-                    <h4>Errores Comunes</h4>
-                    <ul class="common-mistakes-list">
-                        ${technique.commonMistakes.map(mistake => `<li>${mistake}</li>`).join('')}
-                    </ul>
-                </div>
+            <div class="technique-footer">
+                <button class="details-btn">
+                    Ver detalles <i class="fas fa-arrow-right"></i>
+                </button>
             </div>
+        </div>
+    `;
+}
 
-            <div class="technique-detail-section">
-                <h4>Descripción</h4>
-                <p>${technique.description}</p>
-            </div>
-
-            ${technique.videoId ? `
-                <div class="technique-video-section">
-                    <h4>Demostración</h4>
-                    <div class="video-container">
-                        <iframe width="100%" height="315" 
-                                src="https://www.youtube.com/embed/${technique.videoId}" 
-                                frameborder="0" 
-                                allowfullscreen>
-                        </iframe>
-                    </div>
-                </div>
-            ` : ''}
-
-            <div class="technique-detail-section">
-                <h4>Técnicas Relacionadas</h4>
-                <div class="related-techniques">
-                    ${technique.relatedTechniques.map(tech => 
-                        `<span class="related-technique-tag" data-id="${tech}">${techniquesData[tech]?.name || tech}</span>`
-                    ).join('')}
-                </div>
-            </div>
-        `;
-
-        $('.technique-detail-content').html(modalContent);
-        $('#technique-modal').fadeIn(300);
-    }
-
-    // Event listeners para el modal
-    $('.techniques-grid').on('click', '.details-btn', function() {
-        const id = $(this).closest('.technique-card').data('id');
-        showTechniqueDetails(id);
-    });
-
-    $('.close-modal').click(function() {
-        $('#technique-modal').fadeOut(300);
-    });
-
-    $(window).click(function(e) {
-        if ($(e.target).is('#technique-modal')) {
-            $('#technique-modal').fadeOut(300);
+// Inicialización cuando el documento está listo
+$(document).ready(function() {
+    // Cargar técnicas inicialmente
+    cargarTecnicas();
+    
+    // Filtros de categoría
+    $('.filter-btn[data-category]').click(function() {
+        const category = $(this).data('category');
+        if (category === 'all') {
+            $('.technique-category').show();
+        } else {
+            $('.technique-category').hide();
+            $(`#${category}`).show();
         }
     });
-
-    // Event listener para técnicas relacionadas en el modal
-    $('.technique-detail-content').on('click', '.related-technique-tag', function() {
-        const id = $(this).data('id');
-        showTechniqueDetails(id);
+    
+    // Filtros de subcategoría
+    $('.filter-btn[data-subcategory]').click(function() {
+        const subcategory = $(this).data('subcategory');
+        $('.filter-btn[data-subcategory]').removeClass('active');
+        $(this).addClass('active');
+        
+        $('.subcategory').hide();
+        $(`.subcategory h3:contains('${getSubcategoryTitle(subcategory)}')`).parent().show();
     });
-
-    // Cargar técnicas inicialmente
-    filterTechniques();
+    
+    // Filtros de nivel
+    $('.filter-btn[data-level]').click(function() {
+        const level = $(this).data('level');
+        $('.filter-btn[data-level]').removeClass('active');
+        $(this).addClass('active');
+        
+        filtrarPorNivel(level);
+    });
+    
+    // Ver detalles de la técnica
+    $(document).on('click', '.details-btn', function() {
+        const id = $(this).closest('.technique-card').data('id');
+        mostrarDetallesTecnica(id);
+    });
+    
+    // Cerrar modal
+    $('.close-modal').click(function() {
+        $('#technique-modal').fadeOut();
+    });
 });
+
+// Cargar todas las técnicas en sus respectivas secciones
+function cargarTecnicas() {
+    Object.entries(techniquesData).forEach(([id, technique]) => {
+        const card = createTechniqueCard(id, technique);
+        const container = $(`#${technique.category} .subcategory:contains('${getSubcategoryTitle(technique.subcategory)}') .techniques-grid`);
+        if (container.length) {
+            container.append(card);
+        }
+    });
+}
+
+// Filtrar técnicas por nivel
+function filtrarPorNivel(level) {
+    $('.technique-card').each(function() {
+        const cardLevel = $(this).data('level');
+        if (level === cardLevel || level === 'all') {
+            $(this).show();
+        } else {
+            $(this).hide();
+        }
+    });
+}
+
+// Mostrar detalles de una técnica en el modal
+function mostrarDetallesTecnica(id) {
+    const technique = techniquesData[id];
+    if (!technique) return;
+    
+    let heightDisplay = '';
+    if (Array.isArray(technique.height)) {
+        heightDisplay = technique.height.join(', ');
+    } else if (technique.height) {
+        heightDisplay = technique.height;
+    }
+    
+    const modalContent = `
+        <div class="technique-detail-header">
+            <h2>${technique.name}</h2>
+            <div class="japanese">${technique.japanese}</div>
+            <div class="technique-tags">
+                <span class="tag">Categoría: ${getCategoryName(technique.category)}</span>
+                <span class="tag">Nivel: ${getLevelName(technique.level)}</span>
+                ${heightDisplay ? `<span class="tag">Altura: ${heightDisplay}</span>` : ''}
+            </div>
+        </div>
+        
+        <div class="technique-detail-section">
+            <h3>Descripción</h3>
+            <p>${technique.description}</p>
+        </div>
+        
+        <div class="technique-detail-grid">
+            <div class="technique-detail-section">
+                <h3>Características principales</h3>
+                <ul class="details-list">
+                    ${technique.details.map(detail => `<li>${detail}</li>`).join('')}
+                </ul>
+            </div>
+        </div>
+    `;
+    
+    $('.technique-detail-content').html(modalContent);
+    $('#technique-modal').fadeIn();
+}
+
+// Funciones auxiliares para obtener nombres legibles
+function getSubcategoryTitle(subcategory) {
+    const titles = {
+        'posicion-baja': 'Posiciones Bajas',
+        'posicion-alta': 'Posiciones Altas',
+        'un-brazo': 'Defensas con Un Brazo',
+        'doble': 'Defensas con Ambos Brazos',
+        'mano-cerrada': 'Con el Puño Cerrado',
+        'mano-abierta': 'Con la Mano Abierta',
+        'basicas': 'Tipos de Patadas'
+    };
+    return titles[subcategory] || subcategory;
+}
+
+function getCategoryName(category) {
+    const categories = {
+        'dachi-waza': 'Posiciones',
+        'uke-waza': 'Defensas',
+        'tsuki-waza': 'Golpes Directos',
+        'uchi-waza': 'Golpes Indirectos',
+        'keri-waza': 'Patadas'
+    };
+    return categories[category] || category;
+}
+
+function getLevelName(level) {
+    const levels = {
+        'basic': 'Básico',
+        'intermediate': 'Intermedio',
+        'advanced': 'Avanzado'
+    };
+    return levels[level] || level;
+}

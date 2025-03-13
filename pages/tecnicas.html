@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Técnicas - ShotokanPedia</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/technique-styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         /* Estilos específicos para técnicas */
@@ -81,11 +82,12 @@
             <nav>
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="katas.html">Katas</a></li>
-                    <li><a href="tecnicas.html" class="active">Técnicas</a></li>
+                    <li><a href="katas.html" class="active">Katas</a></li>
+                    <li><a href="tecnicas.html">Técnicas</a></li>
                     <li><a href="diccionario.html">Diccionario</a></li>
                     <li><a href="historia.html">Historia</a></li>
                     <li><a href="etiqueta.html">Etiqueta y Filosofía</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
                 </ul>
                 <div class="menu-toggle">
                     <i class="fas fa-bars"></i>
@@ -97,7 +99,7 @@
     <section class="page-header">
         <div class="container">
             <h2>Técnicas de Karate Shotokan</h2>
-            <p>Explorador completo de técnicas tradicionales</p>
+            <p>Explorador completo de técnicas tradicionales del estilo Shotokan</p>
         </div>
     </section>
 
@@ -111,20 +113,23 @@
                 
                 <div class="filter-groups">
                     <div class="filter-group">
-                        <h3>Tipo Principal</h3>
-                        <button class="filter-btn active" data-type="all">Todos</button>
-                        <button class="filter-btn" data-type="attack">Ataques</button>
-                        <button class="filter-btn" data-type="defense">Defensas</button>
-                        <button class="filter-btn" data-type="stance">Posiciones</button>
+                        <h3>Categoría Principal</h3>
+                        <button class="filter-btn active" data-category="all">Todas</button>
+                        <button class="filter-btn" data-category="dachi-waza">Dachi Waza (Posiciones)</button>
+                        <button class="filter-btn" data-category="uke-waza">Uke Waza (Defensas)</button>
+                        <button class="filter-btn" data-category="tsuki-waza">Tsuki Waza (Golpes Directos)</button>
+                        <button class="filter-btn" data-category="uchi-waza">Uchi Waza (Golpes Indirectos)</button>
+                        <button class="filter-btn" data-category="keri-waza">Keri Waza (Patadas)</button>
                     </div>
 
                     <div class="filter-group">
-                        <h3>Categoría</h3>
-                        <button class="filter-btn" data-category="tsuki-waza">Tsuki Waza (Puños)</button>
-                        <button class="filter-btn" data-category="geri-waza">Geri Waza (Patadas)</button>
-                        <button class="filter-btn" data-category="uke-waza">Uke Waza (Bloqueos)</button>
-                        <button class="filter-btn" data-category="uchi-waza">Uchi Waza (Golpes)</button>
-                        <button class="filter-btn" data-category="dachi-waza">Dachi Waza (Posiciones)</button>
+                        <h3>Subcategoría</h3>
+                        <button class="filter-btn" data-subcategory="posicion-baja">Posiciones Bajas</button>
+                        <button class="filter-btn" data-subcategory="posicion-alta">Posiciones Altas</button>
+                        <button class="filter-btn" data-subcategory="un-brazo">Defensas Un Brazo</button>
+                        <button class="filter-btn" data-subcategory="doble">Defensas/Ataques Dobles</button>
+                        <button class="filter-btn" data-subcategory="mano-cerrada">Mano Cerrada</button>
+                        <button class="filter-btn" data-subcategory="mano-abierta">Mano Abierta</button>
                     </div>
 
                     <div class="filter-group">
@@ -149,9 +154,178 @@
                 </div>
             </div>
 
-            <div class="techniques-grid">
-                <!-- Las técnicas se cargarán dinámicamente aquí -->
+            <div class="technique-categories">
+                <!-- Dachi waza / Posiciones -->
+                <div class="technique-category" id="dachi-waza">
+                    <div class="category-header">
+                        <h2><i class="fas fa-shoe-prints"></i> Dachi Waza (Posiciones)</h2>
+                        <p>El conjunto de todas las posiciones o posturas de las piernas que forman la base del karate.</p>
+                    </div>
+                    
+                    <div class="subcategory">
+                        <h3>Posiciones Bajas</h3>
+                        <p>El centro de gravedad se encuentra más cerca del suelo, proporcionando mayor estabilidad pero requiriendo más fuerza.</p>
+                        <div class="techniques-grid">
+                            <!-- Se cargarán dinámicamente con JS -->
+                        </div>
+                    </div>
+                    
+                    <div class="subcategory">
+                        <h3>Posiciones Altas</h3>
+                        <p>Posiciones con el centro de gravedad más elevado, que facilitan movimientos rápidos y transiciones fluidas.</p>
+                        <div class="techniques-grid">
+                            <!-- Se cargarán dinámicamente con JS -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Uke waza / Defensas -->
+                <div class="technique-category" id="uke-waza">
+                    <div class="category-header">
+                        <h2><i class="fas fa-shield-alt"></i> Uke Waza (Defensas)</h2>
+                        <p>Técnicas de bloqueo duro o chequeo suave utilizadas para detener o desviar ataques.</p>
+                    </div>
+                    
+                    <div class="subcategory">
+                        <h3>Defensas con Un Brazo</h3>
+                        <div class="techniques-grid">
+                            <!-- Se cargarán dinámicamente con JS -->
+                        </div>
+                    </div>
+                    
+                    <div class="subcategory">
+                        <h3>Defensas con Ambos Brazos</h3>
+                        <div class="techniques-grid">
+                            <!-- Se cargarán dinámicamente con JS -->
+                        </div>
+                    </div>
+                    
+                    <div class="subcategory">
+                        <h3>Defensas con Pies y Piernas</h3>
+                        <div class="techniques-grid">
+                            <!-- Se cargarán dinámicamente con JS -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tsuki waza / Golpes directos -->
+                <div class="technique-category" id="tsuki-waza">
+                    <div class="category-header">
+                        <h2><i class="fas fa-fist-raised"></i> Tsuki Waza (Golpes Directos)</h2>
+                        <p>Técnicas de golpe directo con el puño o la mano.</p>
+                    </div>
+                    
+                    <div class="subcategory">
+                        <h3>Con el Puño Cerrado</h3>
+                        <div class="techniques-grid">
+                            <!-- Se cargarán dinámicamente con JS -->
+                        </div>
+                    </div>
+                    
+                    <div class="subcategory">
+                        <h3>Con la Mano Abierta</h3>
+                        <div class="techniques-grid">
+                            <!-- Se cargarán dinámicamente con JS -->
+                        </div>
+                    </div>
+                    
+                    <div class="subcategory">
+                        <h3>Ataques con Ambos Puños</h3>
+                        <div class="techniques-grid">
+                            <!-- Se cargarán dinámicamente con JS -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Uchi waza / Golpes indirectos -->
+                <div class="technique-category" id="uchi-waza">
+                    <div class="category-header">
+                        <h2><i class="fas fa-hand-rock"></i> Uchi Waza (Golpes Indirectos)</h2>
+                        <p>Golpes indirectos o circulares con distintas partes del cuerpo.</p>
+                    </div>
+                    
+                    <div class="subcategory">
+                        <h3>Golpes con la Mano Cerrada</h3>
+                        <div class="techniques-grid">
+                            <!-- Se cargarán dinámicamente con JS -->
+                        </div>
+                    </div>
+                    
+                    <div class="subcategory">
+                        <h3>Golpes con la Mano Abierta</h3>
+                        <div class="techniques-grid">
+                            <!-- Se cargarán dinámicamente con JS -->
+                        </div>
+                    </div>
+                    
+                    <div class="subcategory">
+                        <h3>Golpes con Otras Partes</h3>
+                        <div class="techniques-grid">
+                            <!-- Se cargarán dinámicamente con JS -->
+                        </div>
+                    </div>
+                    
+                    <div class="subcategory">
+                        <h3>Golpes con Ambas Manos</h3>
+                        <div class="techniques-grid">
+                            <!-- Se cargarán dinámicamente con JS -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Keri waza / Patadas -->
+                <div class="technique-category" id="keri-waza">
+                    <div class="category-header">
+                        <h2><i class="fas fa-shoe-prints fa-rotate-270"></i> Keri Waza (Patadas)</h2>
+                        <p>Técnicas que utilizan los pies o las piernas como armas de impacto.</p>
+                    </div>
+                    
+                    <div class="subcategory">
+                        <h3>Tipos de Patadas</h3>
+                        <div class="techniques-grid">
+                            <!-- Se cargarán dinámicamente con JS -->
+                        </div>
+                    </div>
+                    
+                    <div class="subcategory">
+                        <h3>Clasificación por Formas de Golpeo</h3>
+                        <div class="technique-classification">
+                            <div class="classification-group">
+                                <h4>Según forma de golpeo</h4>
+                                <ul>
+                                    <li><strong>KEAGE</strong>: Ascendentes</li>
+                                    <li><strong>KEKOMI</strong>: Penetrantes</li>
+                                    <li><strong>KEBANASHI</strong>: Percutantes</li>
+                                    <li><strong>FUMIKIRI</strong>: Cortantes</li>
+                                    <li><strong>FUMIKOMI</strong>: Aplastantes o pisotón</li>
+                                </ul>
+                            </div>
+                            <div class="classification-group">
+                                <h4>Según altura</h4>
+                                <ul>
+                                    <li><strong>GEDAN</strong>: Bajas (hasta la cadera)</li>
+                                    <li><strong>CHŪDAN</strong>: Medias (cadera a cuello)</li>
+                                    <li><strong>JŌDAN</strong>: Altas (cuello y cabeza)</li>
+                                </ul>
+                            </div>
+                            <div class="classification-group">
+                                <h4>Según parte golpeante</h4>
+                                <ul>
+                                    <li><strong>HIZA</strong>: Rodilla</li>
+                                    <li><strong>SUNE</strong>: Tibia</li>
+                                    <li><strong>HAISOKU</strong>: Empeine</li>
+                                    <li><strong>KAKATO</strong>: Talón</li>
+                                    <li><strong>KOSHI</strong>: Parte plantar posterior</li>
+                                    <li><strong>SOKUTŌ</strong>: Canto exterior</li>
+                                    <li><strong>TEISOKU</strong>: Planta del pie</li>
+                                    <li><strong>TSUMASAKI</strong>: Punta de los dedos</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
     </section>
 

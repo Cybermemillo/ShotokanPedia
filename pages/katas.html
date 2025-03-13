@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Katas - ShotokanPedia</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/kata-styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -21,6 +22,7 @@
                     <li><a href="diccionario.html">Diccionario</a></li>
                     <li><a href="historia.html">Historia</a></li>
                     <li><a href="etiqueta.html">Etiqueta y Filosofía</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
                 </ul>
                 <div class="menu-toggle">
                     <i class="fas fa-bars"></i>
@@ -37,43 +39,46 @@
     </section>
 
     <section class="kata-info">
+        <div class="decorative-pattern left"></div>
+        <div class="decorative-pattern right"></div>
         <div class="container">
             <div class="section-title">
                 <h2>¿Qué son los Katas?</h2>
                 <div class="japanese-title">型</div>
             </div>
             <div class="kata-intro-content">
-                <div class="kata-intro-text">
-                    <div class="scroll-design">
-                        <div class="scroll-content">
-                            <p class="highlight-quote">"Los katas son la esencia del karate, el legado de siglos de experiencia y sabiduría marcial."</p>
-                            <p>Los katas (型 o 形) son secuencias de movimientos preestablecidos que representan un combate contra adversarios imaginarios. Son la columna vertebral del karate tradicional, transmitidos de generación en generación.</p>
-                        </div>
+                <div class="scroll-design">
+                    <div class="scroll-content">
+                        <p class="highlight-quote">"Los katas son la esencia del karate, el legado de siglos de experiencia y sabiduría marcial."</p>
+                        <p>Los katas (型 o 形) son secuencias de movimientos preestablecidos que representan un combate contra adversarios imaginarios. Son la columna vertebral del karate tradicional, transmitidos de generación en generación.</p>
+                        <p>Cada kata cuenta una historia particular y contiene técnicas específicas que fueron desarrolladas como respuesta a situaciones de combate. Practicar katas no solo fortalece el cuerpo, sino que también nutre el espíritu y agudiza la mente del practicante.</p>
                     </div>
                 </div>
+                
                 <div class="kata-principles">
                     <div class="principle-card">
                         <div class="principle-icon">
                             <i class="fas fa-brain"></i>
                         </div>
                         <h3>Mente</h3>
-                        <p>Desarrollo de la concentración y el control mental</p>
+                        <p>Desarrollo de la concentración, enfoque mental y capacidad de visualización.</p>
                     </div>
                     <div class="principle-card">
                         <div class="principle-icon">
                             <i class="fas fa-fist-raised"></i>
                         </div>
                         <h3>Técnica</h3>
-                        <p>Perfeccionamiento de movimientos y posiciones</p>
+                        <p>Perfeccionamiento de movimientos, posiciones y aplicaciones prácticas.</p>
                     </div>
                     <div class="principle-card">
                         <div class="principle-icon">
                             <i class="fas fa-yin-yang"></i>
                         </div>
                         <h3>Espíritu</h3>
-                        <p>Cultivo del espíritu marcial y la disciplina</p>
+                        <p>Cultivo del espíritu marcial, disciplina y desarrollo del carácter.</p>
                     </div>
                 </div>
+                
                 <div class="kata-historical">
                     <div class="historical-image">
                         <img src="../img/old-karate-master.jpg" alt="Antiguo maestro de karate">
@@ -81,7 +86,9 @@
                     </div>
                     <div class="historical-text">
                         <h3>Contexto Histórico</h3>
-                        <p>Los katas tienen sus raíces en la antigua Okinawa, donde los maestros desarrollaron estas formas como un método para preservar y transmitir las técnicas de combate. En el estilo Shotokan, el Maestro Funakoshi sistematizó y adaptó estos katas para la enseñanza moderna.</p>
+                        <p>Los katas tienen sus raíces en la antigua Okinawa, donde los maestros desarrollaron estas formas como un método para preservar y transmitir las técnicas de combate en una época en que la práctica abierta de artes marciales estaba prohibida.</p>
+                        <p>En el estilo Shotokan, el Maestro Funakoshi sistematizó y adaptó estos katas para la enseñanza moderna, modificando algunos aspectos para facilitar su aprendizaje y práctica. La JKA ha continuado preservando fielmente estas formas como pilares fundamentales del entrenamiento.</p>
+                        
                         <div class="kata-stats">
                             <div class="stat">
                                 <span class="number">26</span>
@@ -100,17 +107,17 @@
                 </div>
             </div>
         </div>
-        <div class="decorative-pattern left"></div>
-        <div class="decorative-pattern right"></div>
     </section>
 
     <section class="kata-selection">
         <div class="container">
             <div class="section-title">
                 <h2>Explorar Katas</h2>
+                <p>Selecciona una categoría y descubre los katas del estilo Shotokan</p>
             </div>
+            
             <div class="kata-buttons">
-                <button class="kata-category-btn" data-category="basic">Katas Básicos</button>
+                <button class="kata-category-btn active" data-category="basic">Katas Básicos</button>
                 <button class="kata-category-btn" data-category="intermediate">Katas Intermedios</button>
                 <button class="kata-category-btn" data-category="advanced">Katas Avanzados</button>
             </div>

@@ -1,0 +1,282 @@
+/* Estilos específicos para la sección de etiqueta y filosofía */
+
+/* Sección de introducción */
+.philosophy-intro {
+    background: linear-gradient(135deg, var(--background-light) 0%, var(--accent-color) 100%);
+    padding: 60px 0;
+    position: relative;
+}
+
+/* Tarjetas de etiqueta */
+.etiquette-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    padding: 30px;
+    margin-bottom: 30px;
+    transition: var(--transition-normal);
+    border-top: 3px solid transparent;
+    height: 100%;
+}
+
+.etiquette-card:hover {
+    transform: translateY(-5px);
+    border-top-color: var(--primary-color);
+}
+
+.etiquette-card h3 {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--border-color);
+    position: relative;
+}
+
+.etiquette-card h3::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
+.etiquette-card ul {
+    padding-left: 20px;
+}
+
+.etiquette-card li {
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.etiquette-card li::before {
+    content: '•';
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+/* Principios y Dojo Kun */
+.dojo-kun-section {
+    background: linear-gradient(135deg, var(--background-light) 0%, var(--accent-color) 100%);
+    padding: 80px 0;
+    position: relative;
+}
+
+.principle {
+    background: white;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    padding: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    transition: var(--transition-normal);
+}
+
+.principle:hover {
+    transform: translateY(-5px);
+}
+
+.principle-number {
+    background: var(--primary-color);
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.principle-content {
+    flex-grow: 1;
+}
+
+.principle-content h4 {
+    font-size: 1.4rem;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.principle-content .japanese {
+    display: block;
+    font-family: var(--font-japanese);
+    color: var(--primary-color);
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+/* Citas y decoración */
+.quote {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    font-style: italic;
+    font-size: 1.3rem;
+    color: var(--secondary-color);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    position: relative;
+    box-shadow: var(--box-shadow);
+}
+
+.quote::before,
+.quote::after {
+    content: '"';
+    font-size: 4rem;
+    color: var(--primary-color);
+    opacity: 0.1;
+    position: absolute;
+    line-height: 1;
+}
+
+.quote::before {
+    top: 20px;
+    left: 20px;
+}
+
+.quote::after {
+    bottom: 0;
+    right: 20px;
+}
+
+.quote-author {
+    display: block;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-top: 15px;
+    font-style: normal;
+    font-size: 1.1rem;
+}
+
+/* Grid y layout */
+.two-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* Responsive */
+@media screen and (max-width: 991px) {
+    .two-column {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .principle {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .principle-number {
+        margin: 0 auto 20px;
+    }
+
+    .quote {
+        font-size: 1.1rem;
+        padding: 20px;
+    }
+
+    .quote::before,
+    .quote::after {
+        font-size: 3rem;
+    }
+}
+
+/* Sección de frases de entrenamiento */
+.training-phrases {
+    padding: 80px 0;
+    background-color: var(--background-light);
+    position: relative;
+}
+
+.phrases-introduction {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.phrases-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.phrase-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    padding: 0;
+    overflow: hidden;
+    transition: var(--transition-normal);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.phrase-card:hover {
+    transform: translateY(-5px);
+}
+
+.phrase-symbol {
+    padding: 30px 0;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+    color: white;
+    text-align: center;
+}
+
+.phrase-symbol i {
+    font-size: 2.5rem;
+}
+
+.phrase-content {
+    padding: 25px;
+}
+
+.phrase-content h3 {
+    color: var(--secondary-color);
+    margin-bottom: 5px;
+    font-size: 1.4rem;
+}
+
+.phrase-japanese {
+    font-family: var(--font-japanese);
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.phrase-translation {
+    font-style: italic;
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: var(--secondary-color);
+    border-left: 3px solid var(--primary-color);
+    padding-left: 10px;
+}
+
+.phrase-meaning {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive para frases */
+@media screen and (max-width: 768px) {
+    .phrases-grid {
+        grid-template-columns: 1fr;
+    }
+}

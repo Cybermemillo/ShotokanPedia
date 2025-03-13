@@ -6,104 +6,7 @@
     <title>Etiqueta y Filosofía - ShotokanPedia</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        /* Estilos específicos para la página de etiqueta */
-        .etiquette-card {
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            padding: 30px;
-            margin-bottom: 30px;
-        }
-        
-        .etiquette-card h3 {
-            color: var(--primary-color);
-            border-bottom: 2px solid var(--light-color);
-            padding-bottom: 10px;
-            margin-bottom: 15px;
-        }
-        
-        .principle {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 30px;
-            background-color: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        .principle-number {
-            background: var(--primary-color);
-            color: white;
-            min-width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin-right: 20px;
-        }
-        
-        .principle-content h4 {
-            margin-top: 0;
-            font-size: 1.3rem;
-            color: var(--secondary-color);
-            margin-bottom: 10px;
-        }
-        
-        .principle-content .japanese {
-            display: block;
-            font-style: italic;
-            color: var(--primary-color);
-            margin-bottom: 15px;
-        }
-        
-        .dojo-kun-section {
-            background: var(--light-color);
-            padding: 50px 0;
-        }
-        
-        .quote {
-            font-style: italic;
-            font-size: 1.2rem;
-            color: var(--secondary-color);
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto 30px;
-        }
-        
-        .quote-author {
-            display: block;
-            text-align: right;
-            font-weight: bold;
-        }
-        
-        .two-column {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
-        }
-        
-        @media screen and (max-width: 768px) {
-            .two-column {
-                grid-template-columns: 1fr;
-            }
-            
-            .principle {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
-            
-            .principle-number {
-                margin-right: 0;
-                margin-bottom: 15px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="../css/etiquette-styles.css">
 </head>
 <body>
     <header>
@@ -114,11 +17,12 @@
             <nav>
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="katas.html">Katas</a></li>
+                    <li><a href="katas.html" class="active">Katas</a></li>
                     <li><a href="tecnicas.html">Técnicas</a></li>
                     <li><a href="diccionario.html">Diccionario</a></li>
                     <li><a href="historia.html">Historia</a></li>
-                    <li><a href="etiqueta.html" class="active">Etiqueta y Filosofía</a></li>
+                    <li><a href="etiqueta.html">Etiqueta y Filosofía</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
                 </ul>
                 <div class="menu-toggle">
                     <i class="fas fa-bars"></i>
@@ -312,6 +216,118 @@
                 </ul>
                 
                 <p>Estos preceptos nos recuerdan que el karate es mucho más que un conjunto de técnicas de combate: es un camino integral de desarrollo humano que abarca todos los aspectos de la vida.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nueva sección para frases de entrenamiento -->
+    <section class="training-phrases">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frases y Enseñanzas en el Entrenamiento</h2>
+                <p>Sabiduría transmitida por los maestros durante la práctica del karate</p>
+            </div>
+            
+            <div class="phrases-introduction">
+                <p>Durante el entrenamiento de karate, los maestros a menudo imparten enseñanzas profundas a través de frases concisas que contienen gran sabiduría. Estas expresiones, muchas veces pronunciadas en japonés, encapsulan aspectos fundamentales de la mentalidad, técnica y filosofía del karateca.</p>
+            </div>
+            
+            <div class="phrases-grid">
+                <div class="phrase-card">
+                    <div class="phrase-symbol">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <div class="phrase-content">
+                        <h3>Enzan no Metsuke</h3>
+                        <div class="phrase-japanese">遠山の目付け</div>
+                        <p class="phrase-translation">"Fijar la mirada en una montaña lejana"</p>
+                        <p class="phrase-meaning">No fijes tu mirada en un solo punto durante el combate. Mantén una visión amplia y periférica, como si contemplaras una montaña distante, para ser consciente de todo tu entorno.</p>
+                    </div>
+                </div>
+                
+                <div class="phrase-card">
+                    <div class="phrase-symbol">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <div class="phrase-content">
+                        <h3>Mizu no Kokoro</h3>
+                        <div class="phrase-japanese">水の心</div>
+                        <p class="phrase-translation">"Mente como el agua"</p>
+                        <p class="phrase-meaning">Mantén tu mente tranquila y adaptable como el agua. Responde naturalmente a las situaciones, sin perturbación emocional, reflejando con precisión lo que sucede a tu alrededor.</p>
+                    </div>
+                </div>
+                
+                <div class="phrase-card">
+                    <div class="phrase-symbol">
+                        <i class="fas fa-hourglass-half"></i>
+                    </div>
+                    <div class="phrase-content">
+                        <h3>Ichi Go, Ichi E</h3>
+                        <div class="phrase-japanese">一期一会</div>
+                        <p class="phrase-translation">"Un momento, una oportunidad"</p>
+                        <p class="phrase-meaning">Cada entrenamiento es único y nunca volverá a repetirse exactamente igual. Valora cada momento y entrégate por completo, pues cada experiencia es una oportunidad irrepetible.</p>
+                    </div>
+                </div>
+                
+                <div class="phrase-card">
+                    <div class="phrase-symbol">
+                        <i class="fas fa-fist-raised"></i>
+                    </div>
+                    <div class="phrase-content">
+                        <h3>Osu</h3>
+                        <div class="phrase-japanese">押忍</div>
+                        <p class="phrase-translation">"Empujar y soportar"</p>
+                        <p class="phrase-meaning">Expresión que encarna el espíritu de perseverancia y determinación. Representa la voluntad de superar dificultades, resistir el dolor y continuar adelante sin rendirse jamás.</p>
+                    </div>
+                </div>
+                
+                <div class="phrase-card">
+                    <div class="phrase-symbol">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <div class="phrase-content">
+                        <h3>Ki Ken Tai Ichi</h3>
+                        <div class="phrase-japanese">気剣体一</div>
+                        <p class="phrase-translation">"Espíritu, puño y cuerpo unidos"</p>
+                        <p class="phrase-meaning">La energía mental (ki), la técnica (ken) y el cuerpo (tai) deben actuar como una sola unidad. Esta armonía perfecta es esencial para que una técnica alcance su máxima eficacia.</p>
+                    </div>
+                </div>
+                
+                <div class="phrase-card">
+                    <div class="phrase-symbol">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <div class="phrase-content">
+                        <h3>Todome</h3>
+                        <div class="phrase-japanese">止め</div>
+                        <p class="phrase-translation">"Golpe definitivo"</p>
+                        <p class="phrase-meaning">Completa cada técnica con determinación total, como si fuera el golpe decisivo. No dejes técnicas a medias; lleva cada movimiento hasta su conclusión con precisión y compromiso absoluto.</p>
+                    </div>
+                </div>
+                
+                <div class="phrase-card">
+                    <div class="phrase-symbol">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <div class="phrase-content">
+                        <h3>Yoi Dōin</h3>
+                        <div class="phrase-japanese">良い動因</div>
+                        <p class="phrase-translation">"Buen impulso"</p>
+                        <p class="phrase-meaning">Genera la potencia desde el centro del cuerpo, no solo desde las extremidades. El verdadero poder proviene de una correcta canalización de la energía desde el hara (centro) hacia fuera.</p>
+                    </div>
+                </div>
+                
+                <div class="phrase-card">
+                    <div class="phrase-symbol">
+                        <i class="fas fa-feather"></i>
+                    </div>
+                    <div class="phrase-content">
+                        <h3>Ju No Ri</h3>
+                        <div class="phrase-japanese">柔の理</div>
+                        <p class="phrase-translation">"Principio de la suavidad"</p>
+                        <p class="phrase-meaning">La flexibilidad vence a la rigidez. Aprende a ceder cuando es necesario para luego contraatacar con mayor eficacia, utilizando la fuerza del oponente en su contra.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

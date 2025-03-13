@@ -1,0 +1,490 @@
+/* Estilos específicos para la sección de katas */
+
+/* Sección de introducción */
+.kata-info {
+    background: linear-gradient(135deg, var(--background-light) 0%, var(--accent-color) 100%);
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.kata-info::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: linear-gradient(to bottom right, var(--light-color) 49%, transparent 50%);
+}
+
+.japanese-title {
+    font-family: var(--font-japanese);
+    font-size: 4rem;
+    color: var(--primary-color);
+    opacity: 0.1;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    transform: rotate(-5deg);
+    z-index: 0;
+}
+
+.kata-intro-content {
+    position: relative;
+    z-index: 1;
+}
+
+.scroll-design {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.scroll-design::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(to bottom, var(--primary-color), transparent);
+}
+
+.highlight-quote {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+/* Principios del kata */
+.kata-principles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cambio a 3 columnas fijas de igual tamaño */
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.principle-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    padding: 30px;
+    text-align: center;
+    transition: var(--transition-normal);
+    border-top: 3px solid transparent;
+    height: 100%; /* Asegurar que todas las tarjetas tengan la misma altura */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.principle-card:hover {
+    transform: translateY(-5px);
+    border-top-color: var(--primary-color);
+}
+
+.principle-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--background-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.principle-icon i {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+.principle-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+}
+
+/* Historia y contexto */
+.kata-historical {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+}
+
+.historical-image {
+    position: relative;
+}
+
+.historical-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.historical-text {
+    padding: 30px;
+}
+
+.historical-text h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+}
+
+.kata-stats {
+    display: flex;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.stat {
+    flex: 1;
+    padding: 15px;
+    border-right: 1px solid var(--border-color);
+}
+
+.stat:last-child {
+    border-right: none;
+}
+
+.stat .number {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.stat .label {
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+}
+
+/* Selección de katas */
+.kata-selection {
+    padding: 80px 0;
+    background-color: var(--light-color);
+    position: relative;
+}
+
+.kata-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.kata-category-btn {
+    padding: 12px 25px;
+    border: none;
+    background-color: white;
+    border-radius: 30px;
+    font-weight: 600;
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition: var(--transition-normal);
+    box-shadow: var(--box-shadow);
+}
+
+.kata-category-btn:hover,
+.kata-category-btn.active {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-3px);
+}
+
+.kata-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.kata-btn {
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: var(--transition-normal);
+    box-shadow: var(--box-shadow);
+    font-weight: 500;
+    border-top: 3px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.kata-btn:hover,
+.kata-btn.active {
+    border-top-color: var(--primary-color);
+    transform: translateY(-5px);
+}
+
+.kata-btn.active::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 30px 30px 0;
+    border-color: transparent var(--primary-color) transparent transparent;
+}
+
+/* Detalles del kata */
+.kata-detail {
+    background-color: var(--background-accent);
+    padding: 80px 0;
+    position: relative;
+}
+
+.kata-header {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.kata-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(to right, var(--primary-color), var(--primary-light));
+}
+
+.kata-title {
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.kata-japanese {
+    margin-bottom: 20px;
+}
+
+.kata-japanese .kanji {
+    font-family: var(--font-japanese);
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+.kata-japanese .romaji {
+    color: #666;
+    font-style: italic;
+}
+
+.kata-brief {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.kata-brief span {
+    padding: 5px 15px;
+    background-color: var(--background-light);
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.kata-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 30px;
+}
+
+.kata-section {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.kata-section h3 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.kata-meaning {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.kata-features {
+    list-style: none;
+    padding: 0;
+}
+
+.kata-features li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.kata-features li i {
+    color: var(--primary-color);
+    margin-right: 15px;
+    font-size: 1.2rem;
+}
+
+.bunkai-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.bunkai-item {
+    background-color: var(--background-light);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.bunkai-item h4 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.kata-video {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    padding: 30px;
+    overflow: hidden;
+}
+
+.kata-video h3 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.kata-video iframe {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Decoraciones */
+.decorative-pattern {
+    position: absolute;
+    width: 150px;
+    height: 300px;
+    opacity: 0.05;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.decorative-pattern.left {
+    left: 30px;
+    top: 100px;
+    background-image: url('../img/japanese-pattern.png');
+}
+
+.decorative-pattern.right {
+    right: 30px;
+    bottom: 100px;
+    background-image: url('../img/japanese-pattern.png');
+    transform: rotate(180deg);
+}
+
+/* Responsive */
+@media screen and (max-width: 991px) {
+    .kata-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .kata-historical {
+        grid-template-columns: 1fr;
+    }
+    
+    .historical-image {
+        height: 300px;
+    }
+
+    .kata-principles {
+        grid-template-columns: 1fr; /* En tablets y móviles, una columna */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .kata-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .kata-category-btn {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .kata-grid {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+    
+    .bunkai-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .kata-brief {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+/* Animaciones */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.kata-detail {
+    animation: slideUp 0.5s ease forwards;
+}

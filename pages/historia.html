@@ -3,154 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historia - ShotokanPedia</title>
+    <title>Historia del Karate Shotokan - ShotokanPedia</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/history-styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        /* Estilos específicos para la página de historia */
-        .timeline {
-            position: relative;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 0;
-        }
-        
-        .timeline::after {
-            content: '';
-            position: absolute;
-            width: 3px;
-            background-color: var(--primary-color);
-            top: 0;
-            bottom: 0;
-            left: 50%;
-            margin-left: -1.5px;
-        }
-        
-        .timeline-item {
-            padding: 10px 40px;
-            position: relative;
-            width: 50%;
-            box-sizing: border-box;
-        }
-        
-        .timeline-item::after {
-            content: '';
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            background-color: white;
-            border: 4px solid var(--primary-color);
-            border-radius: 50%;
-            top: 15px;
-            z-index: 1;
-        }
-        
-        .left {
-            left: 0;
-        }
-        
-        .right {
-            left: 50%;
-        }
-        
-        .left::after {
-            right: -12px;
-        }
-        
-        .right::after {
-            left: -12px;
-        }
-        
-        .timeline-content {
-            padding: 20px;
-            background-color: white;
-            border-radius: 5px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        .timeline-content h3 {
-            margin-top: 0;
-            color: var(--primary-color);
-        }
-        
-        .timeline-content .date {
-            color: var(--secondary-color);
-            font-weight: bold;
-            margin-bottom: 15px;
-            display: block;
-        }
-        
-        .profile {
-            display: flex;
-            align-items: flex-start;
-            gap: 30px;
-            margin-bottom: 40px;
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-        
-        .profile-image {
-            width: 200px;
-            min-width: 200px;
-            border-radius: 50%;
-            overflow: hidden;
-        }
-        
-        .profile-image img {
-            width: 100%;
-            display: block;
-        }
-        
-        .profile-content h3 {
-            margin-top: 0;
-            color: var(--primary-color);
-            font-size: 1.8rem;
-            margin-bottom: 10px;
-        }
-        
-        .profile-content .dates {
-            margin-bottom: 20px;
-            color: var(--secondary-color);
-            font-style: italic;
-        }
-        
-        /* Responsive */
-        @media screen and (max-width: 768px) {
-            .timeline::after {
-                left: 31px;
-            }
-            
-            .timeline-item {
-                width: 100%;
-                padding-left: 70px;
-                padding-right: 25px;
-            }
-            
-            .timeline-item::after {
-                left: 19px;
-            }
-            
-            .left::after, .right::after {
-                left: 19px;
-            }
-            
-            .right {
-                left: 0;
-            }
-            
-            .profile {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
-            
-            .profile-image {
-                margin-bottom: 20px;
-            }
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -166,6 +22,7 @@
                     <li><a href="diccionario.html">Diccionario</a></li>
                     <li><a href="historia.html" class="active">Historia</a></li>
                     <li><a href="etiqueta.html">Etiqueta y Filosofía</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
                 </ul>
                 <div class="menu-toggle">
                     <i class="fas fa-bars"></i>
@@ -177,38 +34,27 @@
     <section class="page-header">
         <div class="container">
             <h2>Historia del Karate Shotokan</h2>
-            <p>Los orígenes y la evolución del estilo Shotokan y la JKA</p>
+            <p>De Okinawa al mundo: la evolución de un arte marcial legendario</p>
         </div>
     </section>
 
     <section class="history-intro">
         <div class="container">
             <div class="section-title">
-                <h2>Los Orígenes del Karate</h2>
+                <h2>Los Orígenes</h2>
             </div>
-            <div class="content">
-                <p>El karate se originó en Okinawa, una isla que hoy forma parte de Japón pero que históricamente tuvo una gran influencia de la cultura china. Durante siglos, Okinawa fue un importante centro comercial entre Japón, China y el sureste asiático, lo que facilitó el intercambio cultural y marcial.</p>
-                <p>En sus inicios, el arte marcial practicado en Okinawa se denominaba "te" (mano) y se desarrolló como método de defensa personal en una época en la que las armas estaban prohibidas. Se cree que el "te" se mezcló con el kung fu chino para formar lo que más tarde se conocería como "tode" o "karate" (mano china).</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="founder">
-        <div class="container">
-            <div class="section-title">
-                <h2>Gichin Funakoshi: El Padre del Karate Moderno</h2>
-            </div>
-            
-            <div class="profile">
-                <div class="profile-image">
-                    <img src="../img/history/funakoshi.jpg" alt="Gichin Funakoshi">
+            <div class="history-content">
+                <div class="main-text">
+                    <p class="highlight-quote">
+                        "Para entender el karate que practicamos hoy, debemos conocer sus raíces y honrar su historia"
+                    </p>
+                    <p>El karate, cuyo significado literal es "mano vacía", tiene sus raíces en la isla de Okinawa, un pequeño archipiélago que actualmente forma parte de Japón pero que durante siglos mantuvo fuertes vínculos culturales y comerciales con China.</p>
+                    <p>El arte marcial que conocemos hoy como karate surgió de la fusión de las técnicas de combate indígenas de Okinawa, conocidas como "te" (手), con las influencias del kung-fu chino, particularmente del estilo "Shaolin White Crane".</p>
+                    <p>Durante siglos, estas técnicas se desarrollaron en secreto, especialmente durante el período de prohibición de armas impuesto por los señores feudales japoneses (samurái), lo que llevó a los habitantes de Okinawa a perfeccionar métodos de defensa personal sin armas.</p>
                 </div>
-                <div class="profile-content">
-                    <h3>Gichin Funakoshi</h3>
-                    <div class="dates">1868 - 1957</div>
-                    <p>Gichin Funakoshi es ampliamente considerado como el padre del karate moderno. Nacido en Shuri, Okinawa, dedicó su vida a la práctica y enseñanza del karate. En 1922, fue invitado a presentar el karate en Tokio, marcando el comienzo de la difusión del arte marcial en Japón central.</p>
-                    <p>Funakoshi cambió el significado de "karate" de "mano china" a "mano vacía" (空手), enfatizando el aspecto filosófico y espiritual del arte. Fundó el estilo que eventualmente se conocería como Shotokan, nombre derivado de su pseudónimo literario "Shoto" (松涛), que significa "oleaje de pinos".</p>
-                    <p>Bajo su liderazgo, el karate pasó de ser un arte marcial local de Okinawa a ser reconocido oficialmente en Japón, sentando las bases para su difusión mundial posterior.</p>
+                <div class="history-image-container">
+                    <img src="../img/history/okinawa-old.jpg" alt="Antigua Okinawa">
+                    <p class="image-caption">La antigua Okinawa, cuna del karate</p>
                 </div>
             </div>
         </div>
@@ -218,131 +64,358 @@
         <div class="container">
             <div class="section-title">
                 <h2>Cronología del Karate Shotokan</h2>
+                <p>Los momentos clave que definieron el desarrollo del estilo</p>
             </div>
             
             <div class="timeline">
-                <div class="timeline-item left">
+                <div class="timeline-item" data-year="1868">
+                    <div class="timeline-year-marker">
+                        <span class="timeline-year-text">1868</span>
+                    </div>
+                    <div class="timeline-connector"></div>
                     <div class="timeline-content">
-                        <h3>Orígenes en Okinawa</h3>
-                        <span class="date">Siglos XVII-XIX</span>
-                        <p>Desarrollo del "te" en Okinawa bajo la influencia del kung fu chino. Práctica en secreto durante la prohibición de armas impuesta por el clan Satsuma.</p>
+                        <span class="timeline-date">1868</span>
+                        <h3>Restauración Meiji</h3>
+                        <p>Japón se abre al mundo occidental y comienza su modernización. Este cambio político y cultural eventualmente permitiría que las artes marciales de Okinawa fueran conocidas en Japón continental.</p>
                     </div>
                 </div>
                 
-                <div class="timeline-item right">
+                <div class="timeline-item" data-year="1870">
+                    <div class="timeline-year-marker">
+                        <span class="timeline-year-text">1870</span>
+                    </div>
+                    <div class="timeline-connector"></div>
                     <div class="timeline-content">
-                        <h3>Introducción del Karate en las Escuelas</h3>
-                        <span class="date">1902</span>
-                        <p>Funakoshi introduce el karate en el sistema escolar de Okinawa como parte de la educación física.</p>
+                        <span class="timeline-date">1870</span>
+                        <h3>Nacimiento de Gichin Funakoshi</h3>
+                        <p>Nace en Shuri, Okinawa, quien más tarde llegaría a ser conocido como el "padre del karate moderno" y fundador del estilo Shotokan.</p>
                     </div>
                 </div>
                 
-                <div class="timeline-item left">
+                <div class="timeline-item" data-year="1901">
+                    <div class="timeline-year-marker">
+                        <span class="timeline-year-text">1901</span>
+                    </div>
+                    <div class="timeline-connector"></div>
                     <div class="timeline-content">
-                        <h3>Primera Demostración en Japón</h3>
-                        <span class="date">1922</span>
-                        <p>Funakoshi realiza la primera demostración pública de karate en Tokio, invitado por el Ministerio de Educación.</p>
+                        <span class="timeline-date">1901</span>
+                        <h3>Introducción del karate en las escuelas</h3>
+                        <p>El karate comienza a enseñarse oficialmente en el sistema educativo de Okinawa, lo que marca el comienzo de su transición de arte secreto a práctica pública.</p>
                     </div>
                 </div>
                 
-                <div class="timeline-item right">
+                <div class="timeline-item featured" data-year="1922">
+                    <div class="timeline-year-marker">
+                        <span class="timeline-year-text">1922</span>
+                    </div>
+                    <div class="timeline-connector"></div>
                     <div class="timeline-content">
-                        <h3>Publicación de "Karate-Do Kyohan"</h3>
-                        <span class="date">1935</span>
-                        <p>Funakoshi publica su obra maestra "Karate-Do Kyohan", considerada la biblia del karate Shotokan.</p>
+                        <span class="timeline-date">1922</span>
+                        <h3>Primera demostración pública en Tokio</h3>
+                        <p>Gichin Funakoshi realiza la primera demostración pública de karate en Tokio, por invitación del Ministerio de Educación. Este evento marca el comienzo oficial del karate en Japón continental.</p>
+                        <div class="timeline-image">
+                            <img src="../img/history/funakoshi-demo.jpg" alt="Demostración de Funakoshi">
+                        </div>
                     </div>
                 </div>
                 
-                <div class="timeline-item left">
+                <div class="timeline-item" data-year="1930s">
+                    <div class="timeline-year-marker">
+                        <span class="timeline-year-text">1930s</span>
+                    </div>
+                    <div class="timeline-connector"></div>
                     <div class="timeline-content">
-                        <h3>Fundación del Dojo Shotokan</h3>
-                        <span class="date">1936</span>
-                        <p>Se construye el primer dojo dedicado específicamente al karate en Tokio, llamado "Shotokan" en honor al pseudónimo de Funakoshi.</p>
+                        <span class="timeline-date">1930s</span>
+                        <h3>Sistematización y cambios técnicos</h3>
+                        <p>Funakoshi y sus estudiantes desarrollan y refinan lo que se convertiría en el estilo Shotokan, adaptando las técnicas tradicionales de Okinawa al contexto japonés y sistematizando el entrenamiento.</p>
                     </div>
                 </div>
                 
-                <div class="timeline-item right">
+                <div class="timeline-item" data-year="1936">
+                    <div class="timeline-year-marker">
+                        <span class="timeline-year-text">1936</span>
+                    </div>
+                    <div class="timeline-connector"></div>
                     <div class="timeline-content">
+                        <span class="timeline-date">1936</span>
+                        <h3>Primer dojo oficial Shotokan</h3>
+                        <p>Se inaugura el primer dojo oficial llamado "Shotokan" en honor al pseudónimo literario de Funakoshi, "Shoto" (松濤, "olas de pino").</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item featured" data-year="1949">
+                    <div class="timeline-year-marker">
+                        <span class="timeline-year-text">1949</span>
+                    </div>
+                    <div class="timeline-connector"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">1949</span>
                         <h3>Fundación de la JKA</h3>
-                        <span class="date">1949</span>
-                        <p>Se establece la Japan Karate Association (JKA), la primera organización de karate con reconocimiento oficial del gobierno japonés.</p>
+                        <p>Se establece la Japan Karate Association (JKA), la primera organización oficial de karate en Japón, con Funakoshi como instructor jefe honorario y Masatoshi Nakayama como instructor jefe técnico.</p>
+                        <div class="timeline-image">
+                            <img src="../img/history/jka-foundation.jpg" alt="Fundación de la JKA">
+                        </div>
                     </div>
                 </div>
                 
-                <div class="timeline-item left">
+                <div class="timeline-item" data-year="1957">
+                    <div class="timeline-year-marker">
+                        <span class="timeline-year-text">1957</span>
+                    </div>
+                    <div class="timeline-connector"></div>
                     <div class="timeline-content">
-                        <h3>Fallecimiento de Funakoshi</h3>
-                        <span class="date">1957</span>
-                        <p>Gichin Funakoshi fallece a los 88 años, dejando un legado que continúa hasta nuestros días.</p>
+                        <span class="timeline-date">1957</span>
+                        <h3>Fallecimiento de Gichin Funakoshi</h3>
+                        <p>El maestro fundador fallece a los 88 años, dejando un legado que transformaría las artes marciales a nivel mundial.</p>
                     </div>
                 </div>
                 
-                <div class="timeline-item right">
+                <div class="timeline-item" data-year="1960s">
+                    <div class="timeline-year-marker">
+                        <span class="timeline-year-text">60s</span>
+                    </div>
+                    <div class="timeline-connector"></div>
                     <div class="timeline-content">
-                        <h3>Expansión Internacional</h3>
-                        <span class="date">1960s-1970s</span>
-                        <p>Instructores de la JKA como Masatoshi Nakayama, Hirokazu Kanazawa y Taiji Kase difunden el Shotokan por todo el mundo.</p>
+                        <span class="timeline-date">1960s</span>
+                        <h3>Expansión internacional</h3>
+                        <p>La JKA envía instructores a diferentes países, iniciando la expansión global del karate Shotokan. Maestros como Taiji Kase, Hirokazu Kanazawa y Keinosuke Enoeda llevan el estilo a Europa y América.</p>
                     </div>
                 </div>
                 
-                <div class="timeline-item left">
+                <div class="timeline-item" data-year="1970s">
+                    <div class="timeline-year-marker">
+                        <span class="timeline-year-text">70s</span>
+                    </div>
+                    <div class="timeline-connector"></div>
                     <div class="timeline-content">
-                        <h3>Karate Deportivo</h3>
-                        <span class="date">1970-presente</span>
-                        <p>Desarrollo del karate como deporte competitivo, con la celebración de campeonatos mundiales y su inclusión en eventos multideportivos importantes.</p>
+                        <span class="timeline-date">1970s</span>
+                        <h3>Competiciones mundiales</h3>
+                        <p>Se establecen los campeonatos mundiales de karate, con el estilo Shotokan como uno de los más prominentes en competición.</p>
                     </div>
                 </div>
                 
-                <div class="timeline-item right">
+                <div class="timeline-item" data-year="2020">
+                    <div class="timeline-year-marker">
+                        <span class="timeline-year-text">2020</span>
+                    </div>
+                    <div class="timeline-connector"></div>
                     <div class="timeline-content">
-                        <h3>Karate Olímpico</h3>
-                        <span class="date">2020-2021</span>
-                        <p>El karate hace su debut como deporte olímpico en los Juegos de Tokio, marcando un hito en su reconocimiento mundial.</p>
+                        <span class="timeline-date">2020</span>
+                        <h3>El karate en los Juegos Olímpicos</h3>
+                        <p>El karate debuta como deporte olímpico en los Juegos de Tokio, marcando un hito en su reconocimiento internacional.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="masters">
+    <section class="masters-section">
         <div class="container">
             <div class="section-title">
-                <h2>Grandes Maestros del Shotokan</h2>
+                <h2>Maestros Legendarios</h2>
+                <p>Las figuras que forjaron el karate Shotokan</p>
             </div>
             
-            <div class="profile">
-                <div class="profile-image">
-                    <img src="../img/history/nakayama.jpg" alt="Masatoshi Nakayama">
+            <div class="masters-grid">
+                <div class="master-card featured">
+                    <div class="master-image">
+                        <img src="../img/history/funakoshi.jpg" alt="Gichin Funakoshi">
+                    </div>
+                    <div class="master-info">
+                        <h3>Gichin Funakoshi</h3>
+                        <p class="lifespan">1870 - 1957</p>
+                        <p class="title">Fundador del Estilo Shotokan</p>
+                        <p class="master-bio">Conocido como el "padre del karate moderno", Funakoshi fue quien introdujo el karate de Okinawa en Japón y desarrolló el estilo que se conocería como Shotokan. Dedicó su vida a transformar el karate de un arte local de Okinawa a una disciplina reconocida internacionalmente.</p>
+                        <blockquote class="master-quote">
+                            "El objetivo final del karate no reside en la victoria o en la derrota, sino en la perfección del carácter de sus participantes."
+                        </blockquote>
+                    </div>
                 </div>
-                <div class="profile-content">
-                    <h3>Masatoshi Nakayama</h3>
-                    <div class="dates">1913 - 1987</div>
-                    <p>Discípulo directo de Funakoshi, Nakayama se convirtió en el director técnico de la JKA y fue instrumental en la codificación y sistematización del estilo Shotokan. Desarrolló el sistema de enseñanza que sigue siendo la base de la instrucción en la JKA, y produjo la serie "Best Karate" que documentó técnicas y katas para generaciones futuras.</p>
+                
+                <div class="master-card">
+                    <div class="master-image">
+                        <img src="../img/history/nakayama.jpg" alt="Masatoshi Nakayama">
+                    </div>
+                    <div class="master-info">
+                        <h3>Masatoshi Nakayama</h3>
+                        <p class="lifespan">1913 - 1987</p>
+                        <p class="title">Instructor Jefe de la JKA</p>
+                        <p class="master-bio">Discípulo directo de Funakoshi, Nakayama fue instrumental en el desarrollo técnico y sistemático del Shotokan moderno. Como instructor jefe de la JKA, estableció el sistema de entrenamiento para instructores que llevaría el karate a todo el mundo.</p>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="profile">
-                <div class="profile-image">
-                    <img src="../img/history/kanazawa.jpg" alt="Hirokazu Kanazawa">
+                
+                <div class="master-card">
+                    <div class="master-image">
+                        <img src="../img/history/mabuni.jpg" alt="Kenwa Mabuni">
+                    </div>
+                    <div class="master-info">
+                        <h3>Kenwa Mabuni</h3>
+                        <p class="lifespan">1889 - 1952</p>
+                        <p class="title">Fundador del Estilo Shito-Ryu</p>
+                        <p class="master-bio">Contemporáneo de Funakoshi en Okinawa, Mabuni desarrolló el estilo Shito-Ryu pero mantuvo una estrecha relación con Funakoshi y contribuyó al desarrollo técnico del karate en Japón.</p>
+                    </div>
                 </div>
-                <div class="profile-content">
-                    <h3>Hirokazu Kanazawa</h3>
-                    <div class="dates">1931 - 2019</div>
-                    <p>Uno de los karatecas más respetados del siglo XX, Kanazawa fue campeón del primer campeonato de la JKA en 1957. Fundó la Shotokan Karate-Do Internacional Federation (SKIF) y viajó extensamente difundiendo el karate Shotokan por todo el mundo, contribuyendo enormemente a su popularización.</p>
+                
+                <div class="master-card">
+                    <div class="master-image">
+                        <img src="../img/history/nishiyama.jpg" alt="Hidetaka Nishiyama">
+                    </div>
+                    <div class="master-info">
+                        <h3>Hidetaka Nishiyama</h3>
+                        <p class="lifespan">1928 - 2008</p>
+                        <p class="title">Pionero del Shotokan en América</p>
+                        <p class="master-bio">Uno de los instructores que llevó el karate Shotokan a Estados Unidos y fundó la International Traditional Karate Federation (ITKF). Su libro "Karate: The Art of Empty-Hand Fighting" sigue siendo un referente.</p>
+                    </div>
+                </div>
+                
+                <div class="master-card">
+                    <div class="master-image">
+                        <img src="../img/history/kanazawa.jpg" alt="Hirokazu Kanazawa">
+                    </div>
+                    <div class="master-info">
+                        <h3>Hirokazu Kanazawa</h3>
+                        <p class="lifespan">1931 - 2019</p>
+                        <p class="title">Embajador Global del Shotokan</p>
+                        <p class="master-bio">Legendario por su maestría técnica, fue uno de los pocos en lograr el grado 10º Dan en karate Shotokan. Fundó la Shotokan Karate-Do International Federation (SKIF) y fue conocido por integrar elementos de otras artes marciales en su enseñanza.</p>
+                    </div>
+                </div>
+                
+                <div class="master-card">
+                    <div class="master-image">
+                        <img src="../img/history/kase.jpg" alt="Taiji Kase">
+                    </div>
+                    <div class="master-info">
+                        <h3>Taiji Kase</h3>
+                        <p class="lifespan">1929 - 2004</p>
+                        <p class="title">Pionero del Shotokan en Europa</p>
+                        <p class="master-bio">Fue fundamental en la difusión del karate Shotokan en Europa, especialmente en Francia. Desarrolló un enfoque técnico muy particular que enfatizaba la potencia y la efectividad en combate real.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="legacy">
+    <section class="evolution-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>La Evolución del Karate</h2>
+                <p>Transformación desde arte de combate hasta disciplina educativa global</p>
+            </div>
+            
+            <div class="history-tabs">
+                <div class="tab-nav">
+                    <button class="tab-btn active" data-tab="okinawa">Okinawa Te</button>
+                    <button class="tab-btn" data-tab="japan">Karate en Japón</button>
+                    <button class="tab-btn" data-tab="global">Expansión Global</button>
+                    <button class="tab-btn" data-tab="modern">Karate Moderno</button>
+                </div>
+                
+                <div class="tab-content">
+                    <div id="okinawa" class="tab-pane active">
+                        <div class="tab-grid">
+                            <div class="tab-text">
+                                <h3>Los orígenes en Okinawa</h3>
+                                <p>El "te" (mano) de Okinawa era un sistema de combate indígena que se desarrolló en secreto durante siglos en tres ciudades principales: Shuri, Naha y Tomari. Cada una desarrolló su propia variante, conocidas como Shuri-te, Naha-te y Tomari-te.</p>
+                                <p>Influenciado por las artes marciales chinas (principalmente el kung-fu del sur de China), el te de Okinawa se caracterizaba por movimientos potentes y directos, adaptados para la defensa personal contra samurái armados durante el período de prohibición de armas.</p>
+                                <ul class="history-features">
+                                    <li><i class="fas fa-fist-raised"></i> Técnicas de percusión potentes</li>
+                                    <li><i class="fas fa-hand-paper"></i> Endurecimiento de las manos y pies</li>
+                                    <li><i class="fas fa-user-secret"></i> Práctica secreta y privada</li>
+                                    <li><i class="fas fa-tools"></i> Uso de herramientas agrícolas como armas</li>
+                                </ul>
+                            </div>
+                            <div class="tab-image">
+                                <img src="../img/history/okinawa-karate.jpg" alt="Antiguo karate de Okinawa">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="japan" class="tab-pane">
+                        <div class="tab-grid">
+                            <div class="tab-text">
+                                <h3>Transformación en Japón</h3>
+                                <p>Cuando Funakoshi introdujo el karate en Japón en 1922, realizó numerosas adaptaciones para que fuera aceptado por la cultura japonesa y el sistema educativo. El término "karate" cambió sus caracteres de "mano china" (唐手) a "mano vacía" (空手) para alinearse mejor con los sentimientos nacionalistas de la época.</p>
+                                <p>La influencia del budo japonés (camino marcial) transformó el karate de un sistema puramente de combate a un camino de desarrollo personal. Se adoptaron uniformes, sistema de rangos por cinturones, ceremonias formales y métodos de entrenamiento sistemáticos.</p>
+                                <ul class="history-features">
+                                    <li><i class="fas fa-graduation-cap"></i> Integración en el sistema educativo</li>
+                                    <li><i class="fas fa-tasks"></i> Sistematización de la enseñanza</li>
+                                    <li><i class="fas fa-balance-scale"></i> Énfasis en el desarrollo del carácter</li>
+                                    <li><i class="fas fa-users"></i> Entrenamiento grupal y estandarizado</li>
+                                </ul>
+                            </div>
+                            <div class="tab-image">
+                                <img src="../img/history/japan-karate.jpg" alt="Karate en Japón">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="global" class="tab-pane">
+                        <div class="tab-grid">
+                            <div class="tab-text">
+                                <h3>Expansión Internacional</h3>
+                                <p>Tras la Segunda Guerra Mundial, el interés por las artes marciales japonesas creció internacionalmente. La JKA implementó su "Instructor Program" para enviar maestros cualificados a diferentes países, lo que contribuyó enormemente a la difusión del estilo Shotokan.</p>
+                                <p>Durante las décadas de 1960 y 1970, el karate Shotokan se estableció firmemente en Europa, América y más tarde en el resto del mundo. La estandarización técnica de la JKA permitió que el estilo mantuviera su integridad a pesar de su expansión global.</p>
+                                <ul class="history-features">
+                                    <li><i class="fas fa-globe-americas"></i> Adaptación a diferentes culturas</li>
+                                    <li><i class="fas fa-flag"></i> Creación de federaciones nacionales</li>
+                                    <li><i class="fas fa-trophy"></i> Desarrollo del aspecto deportivo</li>
+                                    <li><i class="fas fa-book"></i> Publicación de literatura técnica</li>
+                                </ul>
+                            </div>
+                            <div class="tab-image">
+                                <img src="../img/history/global-karate.jpg" alt="Karate global">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="modern" class="tab-pane">
+                        <div class="tab-grid">
+                            <div class="tab-text">
+                                <h3>Karate en la Era Moderna</h3>
+                                <p>El karate contemporáneo ha evolucionado en múltiples direcciones, desde la competición deportiva hasta la preservación de técnicas tradicionales. La inclusión del karate en los Juegos Olímpicos de Tokio 2020 marcó un hito en su reconocimiento mundial.</p>
+                                <p>Al mismo tiempo, muchas organizaciones y maestros trabajan para preservar los aspectos técnicos y filosóficos tradicionales del karate, manteniendo viva la esencia del arte más allá de su faceta deportiva.</p>
+                                <ul class="history-features">
+                                    <li><i class="fas fa-medal"></i> Reconocimiento olímpico</li>
+                                    <li><i class="fas fa-heartbeat"></i> Énfasis en beneficios para la salud</li>
+                                    <li><i class="fas fa-desktop"></i> Uso de tecnología en el entrenamiento</li>
+                                    <li><i class="fas fa-handshake"></i> Inclusividad y adaptación a todas las edades</li>
+                                </ul>
+                            </div>
+                            <div class="tab-image">
+                                <img src="../img/history/modern-karate.jpg" alt="Karate moderno">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="legacy-section">
         <div class="container">
             <div class="section-title">
                 <h2>El Legado del Shotokan</h2>
             </div>
-            <div class="content">
-                <p>El legado del karate Shotokan va mucho más allá de las técnicas de combate. Funakoshi enfatizaba que el objetivo final del karate no era solo la victoria en el combate, sino el perfeccionamiento del carácter. Su lema "Karate Ni Sente Nashi" (空手に先手なし - "En el karate no existe el primer ataque") refleja la filosofía de moderación y autocontrol que impregna este arte marcial.</p>
-                <p>Hoy en día, el Shotokan es practicado por millones de personas en todo el mundo, siendo uno de los estilos de karate más influyentes y difundidos. La JKA continúa preservando las enseñanzas y técnicas tradicionales, mientras que numerosas organizaciones derivadas difunden sus propias interpretaciones del estilo.</p>
-                <p>El karate Shotokan ha trascendido fronteras culturales y geográficas para convertirse en un verdadero fenómeno global, pero mantiene las raíces y principios fundamentales establecidos por su fundador hace más de un siglo.</p>
+            
+            <div class="legacy-content">
+                <div class="legacy-text">
+                    <p class="highlight-quote">
+                        "El verdadero karate es aquel que se practica como un camino para toda la vida, no sólo como un medio para ganar una competición."
+                    </p>
+                    <p>El legado del karate Shotokan va mucho más allá de las técnicas y los movimientos. Los valores fundamentales que Funakoshi y sus sucesores inculcaron continúan siendo relevantes en el mundo actual:</p>
+                    <ul class="legacy-values">
+                        <li><strong>Perfección del carácter</strong> - El objetivo último del entrenamiento es convertirnos en mejores personas</li>
+                        <li><strong>Sinceridad y honestidad</strong> - Integridad en todas nuestras acciones</li>
+                        <li><strong>Esfuerzo y perseverancia</strong> - La determinación constante ante los desafíos</li>
+                        <li><strong>Respeto y cortesía</strong> - Consideración hacia todos los seres humanos</li>
+                        <li><strong>Autocontrol</strong> - Dominio de nuestros impulsos y emociones</li>
+                    </ul>
+                    <p>Hoy, millones de practicantes en todo el mundo continúan el camino del karate Shotokan, adaptándolo a los tiempos modernos pero manteniendo la esencia de este arte marcial que ha trascendido fronteras, culturas y generaciones.</p>
+                </div>
+                <div class="legacy-image">
+                    <img src="../img/history/dojo-kun.jpg" alt="Dojo Kun en un dojo tradicional">
+                    <p class="image-caption">Dojo Kun, los principios fundamentales del karate, en un dojo tradicional</p>
+                </div>
             </div>
         </div>
     </section>
@@ -380,5 +453,31 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../js/main.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Tabs functionality
+            $('.tab-btn').click(function() {
+                const tabId = $(this).data('tab');
+                
+                $('.tab-btn').removeClass('active');
+                $(this).addClass('active');
+                
+                $('.tab-pane').removeClass('active');
+                $('#' + tabId).addClass('active');
+            });
+            
+            // Timeline animation on scroll
+            $(window).scroll(function() {
+                $('.timeline-item').each(function() {
+                    if ($(window).scrollTop() > $(this).offset().top - $(window).height() * 0.75) {
+                        $(this).addClass('visible');
+                    }
+                });
+            });
+            
+            // Trigger scroll once on page load
+            $(window).trigger('scroll');
+        });
+    </script>
 </body>
 </html>

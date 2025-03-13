@@ -5,94 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diccionario - ShotokanPedia</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dictionary-styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        /* Estilos específicos para el diccionario */
-        .dictionary-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .dictionary-nav {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-bottom: 30px;
-        }
-        
-        .dictionary-nav a {
-            display: block;
-            width: 40px;
-            height: 40px;
-            line-height: 40px;
-            text-align: center;
-            margin: 5px;
-            border-radius: 50%;
-            background-color: var(--light-color);
-            color: var(--secondary-color);
-            font-weight: bold;
-            transition: all 0.3s;
-        }
-        
-        .dictionary-nav a:hover,
-        .dictionary-nav a.active {
-            background-color: var(--primary-color);
-            color: white;
-        }
-        
-        .letter-section {
-            margin-bottom: 40px;
-        }
-        
-        .letter-heading {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 10px 20px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-        }
-        
-        .term {
-            margin-bottom: 25px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid #eee;
-        }
-        
-        .term h4 {
-            color: var(--dark-color);
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-        }
-        
-        .term .japanese {
-            color: var(--primary-color);
-            font-style: italic;
-            margin-bottom: 10px;
-            display: block;
-        }
-        
-        .search-container {
-            margin-bottom: 30px;
-        }
-        
-        #search-term {
-            padding: 10px 15px;
-            width: 70%;
-            border: 1px solid #ddd;
-            border-radius: 5px 0 0 5px;
-            font-size: 1rem;
-        }
-        
-        #search-btn {
-            padding: 10px 15px;
-            background-color: var(--primary-color);
-            border: 1px solid var(--primary-color);
-            color: white;
-            border-radius: 0 5px 5px 0;
-            cursor: pointer;
-            font-size: 1rem;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -103,11 +17,12 @@
             <nav>
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="katas.html">Katas</a></li>
+                    <li><a href="katas.html" class="active">Katas</a></li>
                     <li><a href="tecnicas.html">Técnicas</a></li>
-                    <li><a href="diccionario.html" class="active">Diccionario</a></li>
+                    <li><a href="diccionario.html">Diccionario</a></li>
                     <li><a href="historia.html">Historia</a></li>
                     <li><a href="etiqueta.html">Etiqueta y Filosofía</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
                 </ul>
                 <div class="menu-toggle">
                     <i class="fas fa-bars"></i>
@@ -119,102 +34,52 @@
     <section class="page-header">
         <div class="container">
             <h2>Diccionario de Karate Shotokan</h2>
-            <p>Términos y expresiones japonesas utilizadas en el karate tradicional</p>
+            <p>Glosario completo de términos y expresiones utilizadas en karate</p>
         </div>
     </section>
 
-    <section class="dictionary">
+    <section class="dictionary-section">
         <div class="container">
-            <div class="search-container">
-                <input type="text" id="search-term" placeholder="Buscar término...">
-                <button id="search-btn"><i class="fas fa-search"></i></button>
-            </div>
-
-            <div class="dictionary-nav">
-                <a href="#a">A</a>
-                <a href="#b">B</a>
-                <a href="#c">C</a>
-                <a href="#d">D</a>
-                <a href="#e">E</a>
-                <a href="#f">F</a>
-                <a href="#g">G</a>
-                <a href="#h">H</a>
-                <a href="#i">I</a>
-                <a href="#j">J</a>
-                <a href="#k">K</a>
-                <a href="#m">M</a>
-                <a href="#n">N</a>
-                <a href="#o">O</a>
-                <a href="#r">R</a>
-                <a href="#s">S</a>
-                <a href="#t">T</a>
-                <a href="#u">U</a>
-                <a href="#w">W</a>
-                <a href="#y">Y</a>
-                <a href="#z">Z</a>
-            </div>
-
-            <div class="dictionary-container">
-                <!-- Letra A -->
-                <div id="a" class="letter-section">
-                    <div class="letter-heading">
-                        <h3>A</h3>
-                    </div>
-                    
-                    <div class="term">
-                        <h4>Age-Uke</h4>
-                        <span class="japanese">上げ受け</span>
-                        <p>Bloqueo ascendente. Técnica de bloqueo que se realiza con movimiento ascendente del antebrazo para proteger la parte superior del cuerpo.</p>
-                    </div>
-                    
-                    <div class="term">
-                        <h4>Ashi-Barai</h4>
-                        <span class="japanese">足払い</span>
-                        <p>Barrido de pie. Técnica donde se barre el pie del oponente para desequilibrarlo.</p>
-                    </div>
-                    
-                    <div class="term">
-                        <h4>Atemi</h4>
-                        <span class="japanese">当て身</span>
-                        <p>Golpe a puntos vitales. Técnica para golpear áreas vulnerables del cuerpo.</p>
+            <div class="search-box">
+                <div class="search-container">
+                    <div class="search-input">
+                        <input type="text" id="term-search" placeholder="Buscar término...">
+                        <i class="fas fa-search"></i>
                     </div>
                 </div>
                 
-                <!-- Letra K -->
-                <div id="k" class="letter-section">
-                    <div class="letter-heading">
-                        <h3>K</h3>
-                    </div>
-                    
-                    <div class="term">
-                        <h4>Kata</h4>
-                        <span class="japanese">型</span>
-                        <p>Forma. Secuencia de movimientos preestablecidos que representan un combate contra oponentes imaginarios.</p>
-                    </div>
-                    
-                    <div class="term">
-                        <h4>Kiai</h4>
-                        <span class="japanese">気合</span>
-                        <p>Grito de energía. Vocalización que acompaña a un ataque poderoso, utilizado para concentrar la energía y mostrar determinación.</p>
-                    </div>
-                    
-                    <div class="term">
-                        <h4>Kumite</h4>
-                        <span class="japanese">組手</span>
-                        <p>Combate. Práctica de técnicas de lucha con un oponente real.</p>
-                    </div>
-
-                    <div class="term">
-                        <h4>Kyu</h4>
-                        <span class="japanese">級</span>
-                        <p>Grado. Sistema de clasificación para principiantes, desde 6º kyu (cinturón blanco) hasta 1er kyu (cinturón marrón).</p>
+                <div class="alphabet-selector">
+                    <div class="alphabet-grid">
+                        <!-- Se llenará dinámicamente con JavaScript -->
                     </div>
                 </div>
 
-                <!-- Más secciones del diccionario... -->
-                <div class="dictionary-more">
-                    <p class="center-text">El diccionario completo incluye más de 200 términos. Utiliza la navegación alfabética para explorar todas las entradas.</p>
+                <div class="category-filters">
+                    <button class="category-filter active" data-category="all">Todos</button>
+                    <button class="category-filter" data-category="techniques">Técnicas</button>
+                    <button class="category-filter" data-category="stances">Posiciones</button>
+                    <button class="category-filter" data-category="concepts">Conceptos</button>
+                    <button class="category-filter" data-category="commands">Comandos</button>
+                    <button class="category-filter" data-category="counting">Números</button>
                 </div>
+            </div>
+
+            <div class="terms-grid">
+                <!-- Se llenará dinámicamente con JavaScript -->
+            </div>
+
+            <div class="pagination">
+                <button class="page-button prev disabled">
+                    <i class="fas fa-chevron-left"></i> Anterior
+                </button>
+                <button class="page-button active">1</button>
+                <button class="page-button">2</button>
+                <button class="page-button">3</button>
+                <span>...</span>
+                <button class="page-button">10</button>
+                <button class="page-button next">
+                    Siguiente <i class="fas fa-chevron-right"></i>
+                </button>
             </div>
         </div>
     </section>
@@ -252,6 +117,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/dictionary.js"></script>
     <script>
         $(document).ready(function() {
             // Funcionalidad del buscador de términos
