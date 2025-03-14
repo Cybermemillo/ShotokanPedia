@@ -17,9 +17,9 @@
             <nav>
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="katas.html" class="active">Katas</a></li>
+                    <li><a href="katas.html">Katas</a></li>
                     <li><a href="tecnicas.html">Técnicas</a></li>
-                    <li><a href="diccionario.html">Diccionario</a></li>
+                    <li><a href="diccionario.html" class="active">Diccionario</a></li>
                     <li><a href="historia.html">Historia</a></li>
                     <li><a href="etiqueta.html">Etiqueta y Filosofía</a></li>
                     <li><a href="galeria.html">Galería</a></li>
@@ -59,8 +59,13 @@
                     <button class="category-filter" data-category="techniques">Técnicas</button>
                     <button class="category-filter" data-category="stances">Posiciones</button>
                     <button class="category-filter" data-category="concepts">Conceptos</button>
+                    <button class="category-filter" data-category="anatomy">Anatomía</button>
                     <button class="category-filter" data-category="commands">Comandos</button>
+                    <button class="category-filter" data-category="etiquette">Etiqueta</button>
+                    <button class="category-filter" data-category="kumite">Combate</button>
                     <button class="category-filter" data-category="counting">Números</button>
+                    <button class="category-filter" data-category="equipment">Equipamiento</button>
+                    <button class="category-filter" data-category="terminology">Terminología</button>
                 </div>
             </div>
 
@@ -84,6 +89,129 @@
         </div>
     </section>
 
+    <!-- Nueva sección de alfabeto japonés -->
+    <section class="japanese-alphabet-section">
+        <div class="container">
+            <h2 class="section-title">Alfabeto Japonés en el Karate</h2>
+            <p class="section-description">La comprensión básica de los sistemas de escritura japoneses es útil para todo practicante de karate, ya que permite entender mejor la terminología, los nombres de las técnicas y los conceptos fundamentales del arte.</p>
+            
+            <div class="alphabet-tabs">
+                <button class="alphabet-tab active" data-tab="hiragana">Hiragana</button>
+                <button class="alphabet-tab" data-tab="katakana">Katakana</button>
+                <button class="alphabet-tab" data-tab="kanji">Kanji Importantes</button>
+            </div>
+            
+            <div class="alphabet-content">
+                <div class="alphabet-tab-content active" id="hiragana-content">
+                    <h3>Hiragana - ひらがな</h3>
+                    <p>El hiragana es uno de los sistemas silábicos japoneses, utilizado principalmente para palabras nativas y terminaciones gramaticales.</p>
+                    <div class="alphabet-grid hiragana-grid">
+                        <!-- Se generará dinámicamente -->
+                    </div>
+                </div>
+                
+                <div class="alphabet-tab-content" id="katakana-content">
+                    <h3>Katakana - カタカナ</h3>
+                    <p>El katakana es otro sistema silábico japonés, usado principalmente para palabras extranjeras y onomatopeyas.</p>
+                    <div class="alphabet-grid katakana-grid">
+                        <!-- Se generará dinámicamente -->
+                    </div>
+                </div>
+                
+                <div class="alphabet-tab-content" id="kanji-content">
+                    <h3>Kanji Importantes - 漢字</h3>
+                    <p>Los kanji son caracteres de origen chino utilizados en la escritura japonesa. Estos son algunos de los más relevantes en el contexto del karate:</p>
+                    <div class="kanji-cards">
+                        <div class="kanji-card">
+                            <div class="kanji-char">空</div>
+                            <div class="kanji-info">
+                                <h4>Kara (Kū)</h4>
+                                <p>Vacío, cielo. Primer kanji de la palabra "karate".</p>
+                            </div>
+                        </div>
+                        <div class="kanji-card">
+                            <div class="kanji-char">手</div>
+                            <div class="kanji-info">
+                                <h4>Te</h4>
+                                <p>Mano. Segundo kanji de la palabra "karate" (空手).</p>
+                            </div>
+                        </div>
+                        <div class="kanji-card">
+                            <div class="kanji-char">道</div>
+                            <div class="kanji-info">
+                                <h4>Dō</h4>
+                                <p>Camino, vía. Utilizado en "Karate-dō" (空手道) y "Budō" (武道).</p>
+                            </div>
+                        </div>
+                        <div class="kanji-card">
+                            <div class="kanji-char">武</div>
+                            <div class="kanji-info">
+                                <h4>Bu</h4>
+                                <p>Guerrero, militar, artes marciales. Aparece en "Budō" (武道).</p>
+                            </div>
+                        </div>
+                        <div class="kanji-card">
+                            <div class="kanji-char">型</div>
+                            <div class="kanji-info">
+                                <h4>Kata</h4>
+                                <p>Forma, patrón. Utilizado para referirse a las formas preestablecidas de karate.</p>
+                            </div>
+                        </div>
+                        <div class="kanji-card">
+                            <div class="kanji-char">組</div>
+                            <div class="kanji-info">
+                                <h4>Kumi</h4>
+                                <p>Grupo, conjunto. Primer kanji de "Kumite" (組手), combate.</p>
+                            </div>
+                        </div>
+                        <div class="kanji-card">
+                            <div class="kanji-char">先</div>
+                            <div class="kanji-info">
+                                <h4>Sen</h4>
+                                <p>Antes, previo. Primer kanji de "Sensei" (先生), maestro.</p>
+                            </div>
+                        </div>
+                        <div class="kanji-card">
+                            <div class="kanji-char">生</div>
+                            <div class="kanji-info">
+                                <h4>Sei</h4>
+                                <p>Vida, nacimiento. Segundo kanji de "Sensei" (先生).</p>
+                            </div>
+                        </div>
+                        <div class="kanji-card">
+                            <div class="kanji-char">気</div>
+                            <div class="kanji-info">
+                                <h4>Ki</h4>
+                                <p>Energía, espíritu. Aparece en "Kiai" (気合い), grito de energía.</p>
+                            </div>
+                        </div>
+                        <div class="kanji-card">
+                            <div class="kanji-char">合</div>
+                            <div class="kanji-info">
+                                <h4>Ai</h4>
+                                <p>Unión, armonía. Segundo kanji de "Kiai" (気合い).</p>
+                            </div>
+                        </div>
+                        <div class="kanji-card">
+                            <div class="kanji-char">基</div>
+                            <div class="kanji-info">
+                                <h4>Ki</h4>
+                                <p>Base, fundamento. Primer kanji de "Kihon" (基本), técnicas básicas.</p>
+                            </div>
+                        </div>
+                        <div class="kanji-card">
+                            <div class="kanji-char">本</div>
+                            <div class="kanji-info">
+                                <h4>Hon</h4>
+                                <p>Origen, libro. Segundo kanji de "Kihon" (基本).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -114,6 +242,16 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modal para detalles del término -->
+    <div id="term-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="term-detail-content">
+                <!-- El contenido se insertará dinámicamente -->
+            </div>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../js/main.js"></script>
@@ -150,7 +288,142 @@
                     $('.term').removeClass('highlight');
                 }, 3000);
             }
+            
+            // Cerrar modal
+            $('.close-modal').click(function() {
+                $('#term-modal').fadeOut();
+            });
+            
+            // También cerrar el modal al hacer clic fuera
+            $(window).click(function(e) {
+                if ($(e.target).is('#term-modal')) {
+                    $('#term-modal').fadeOut();
+                }
+            });
+
+            // Funcionalidad para las pestañas de alfabeto
+            $('.alphabet-tab').click(function() {
+                const tab = $(this).data('tab');
+                
+                // Actualizar pestañas activas
+                $('.alphabet-tab').removeClass('active');
+                $(this).addClass('active');
+                
+                // Actualizar contenido visible
+                $('.alphabet-tab-content').removeClass('active');
+                $(`#${tab}-content`).addClass('active');
+            });
+            
+            // Generar tablas de hiragana y katakana
+            generateHiraganaTable();
+            generateKatakanaTable();
         });
+        
+        // Función para generar tabla de hiragana
+        function generateHiraganaTable() {
+            const hiraganaRows = [
+                ["あ", "い", "う", "え", "お"],
+                ["か", "き", "く", "け", "こ"],
+                ["さ", "し", "す", "せ", "そ"],
+                ["た", "ち", "つ", "て", "と"],
+                ["な", "に", "ぬ", "ね", "の"],
+                ["は", "ひ", "ふ", "へ", "ほ"],
+                ["ま", "み", "む", "め", "も"],
+                ["や", "", "ゆ", "", "よ"],
+                ["ら", "り", "る", "れ", "ろ"],
+                ["わ", "", "を", "", "ん"]
+            ];
+            
+            const romanjiRows = [
+                ["a", "i", "u", "e", "o"],
+                ["ka", "ki", "ku", "ke", "ko"],
+                ["sa", "shi", "su", "se", "so"],
+                ["ta", "chi", "tsu", "te", "to"],
+                ["na", "ni", "nu", "ne", "no"],
+                ["ha", "hi", "fu", "he", "ho"],
+                ["ma", "mi", "mu", "me", "mo"],
+                ["ya", "", "yu", "", "yo"],
+                ["ra", "ri", "ru", "re", "ro"],
+                ["wa", "", "wo", "", "n"]
+            ];
+            
+            let tableHTML = '<table class="alphabet-table">';
+            
+            for (let i = 0; i < hiraganaRows.length; i++) {
+                tableHTML += '<tr>';
+                for (let j = 0; j < hiraganaRows[i].length; j++) {
+                    if (hiraganaRows[i][j]) {
+                        tableHTML += `
+                            <td>
+                                <div class="kana-cell">
+                                    <div class="kana">${hiraganaRows[i][j]}</div>
+                                    <div class="romaji">${romanjiRows[i][j]}</div>
+                                </div>
+                            </td>
+                        `;
+                    } else {
+                        tableHTML += '<td></td>';
+                    }
+                }
+                tableHTML += '</tr>';
+            }
+            
+            tableHTML += '</table>';
+            $('.hiragana-grid').html(tableHTML);
+        }
+        
+        // Función para generar tabla de katakana
+        function generateKatakanaTable() {
+            const katakanaRows = [
+                ["ア", "イ", "ウ", "エ", "オ"],
+                ["カ", "キ", "ク", "ケ", "コ"],
+                ["サ", "シ", "ス", "セ", "ソ"],
+                ["タ", "チ", "ツ", "テ", "ト"],
+                ["ナ", "ニ", "ヌ", "ネ", "ノ"],
+                ["ハ", "ヒ", "フ", "ヘ", "ホ"],
+                ["マ", "ミ", "ム", "メ", "モ"],
+                ["ヤ", "", "ユ", "", "ヨ"],
+                ["ラ", "リ", "ル", "レ", "ロ"],
+                ["ワ", "", "ヲ", "", "ン"]
+            ];
+            
+            const romanjiRows = [
+                ["a", "i", "u", "e", "o"],
+                ["ka", "ki", "ku", "ke", "ko"],
+                ["sa", "shi", "su", "se", "so"],
+                ["ta", "chi", "tsu", "te", "to"],
+                ["na", "ni", "nu", "ne", "no"],
+                ["ha", "hi", "fu", "he", "ho"],
+                ["ma", "mi", "mu", "me", "mo"],
+                ["ya", "", "yu", "", "yo"],
+                ["ra", "ri", "ru", "re", "ro"],
+                ["wa", "", "wo", "", "n"]
+            ];
+            
+            let tableHTML = '<table class="alphabet-table">';
+            
+            for (let i = 0; i < katakanaRows.length; i++) {
+                tableHTML += '<tr>';
+                for (let j = 0; j < katakanaRows[i].length; j++) {
+                    if (katakanaRows[i][j]) {
+                        tableHTML += `
+                            <td>
+                                <div class="kana-cell">
+                                    <div class="kana">${katakanaRows[i][j]}</div>
+                                    <div class="romaji">${romanjiRows[i][j]}</div>
+                                </div>
+                            </td>
+                        `;
+                    } else {
+                        tableHTML += '<td></td>';
+                    }
+                }
+                tableHTML += '</tr>';
+            }
+            
+            tableHTML += '</table>';
+            $('.katakana-grid').html(tableHTML);
+        }
     </script>
 </body>
 </html>

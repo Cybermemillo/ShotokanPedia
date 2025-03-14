@@ -82,8 +82,8 @@
             <nav>
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="katas.html" class="active">Katas</a></li>
-                    <li><a href="tecnicas.html">Técnicas</a></li>
+                    <li><a href="katas.html">Katas</a></li>
+                    <li><a href="tecnicas.html" class="active">Técnicas</a></li>
                     <li><a href="diccionario.html">Diccionario</a></li>
                     <li><a href="historia.html">Historia</a></li>
                     <li><a href="etiqueta.html">Etiqueta y Filosofía</a></li>
@@ -107,50 +107,67 @@
         <div class="container">
             <div class="search-filters">
                 <div class="search-bar">
-                    <input type="text" id="technique-search" placeholder="Buscar técnica...">
-                    <i class="fas fa-search"></i>
+                    <div class="search-input-wrapper">
+                        <input type="text" id="technique-search" placeholder="Buscar técnica...">
+                        <i class="fas fa-search search-icon" id="search-button"></i>
+                    </div>
+                    <button class="filter-toggle-btn">
+                        <i class="fas fa-filter"></i> Filtros
+                    </button>
                 </div>
                 
-                <div class="filter-groups">
-                    <div class="filter-group">
-                        <h3>Categoría Principal</h3>
-                        <button class="filter-btn active" data-category="all">Todas</button>
-                        <button class="filter-btn" data-category="dachi-waza">Dachi Waza (Posiciones)</button>
-                        <button class="filter-btn" data-category="uke-waza">Uke Waza (Defensas)</button>
-                        <button class="filter-btn" data-category="tsuki-waza">Tsuki Waza (Golpes Directos)</button>
-                        <button class="filter-btn" data-category="uchi-waza">Uchi Waza (Golpes Indirectos)</button>
-                        <button class="filter-btn" data-category="keri-waza">Keri Waza (Patadas)</button>
+                <div class="filter-container collapsed">
+                    <div class="filter-groups">
+                        <div class="filter-group">
+                            <h3>Categoría Principal</h3>
+                            <div class="filter-options">
+                                <button class="filter-btn active" data-category="all">Todas</button>
+                                <button class="filter-btn" data-category="dachi-waza">Posiciones</button>
+                                <button class="filter-btn" data-category="uke-waza">Defensas</button>
+                                <button class="filter-btn" data-category="tsuki-waza">Golpes Directos</button>
+                                <button class="filter-btn" data-category="uchi-waza">G. Indirectos</button>
+                                <button class="filter-btn" data-category="taibuki-waza">Otras Partes</button>
+                                <button class="filter-btn" data-category="keri-waza">Patadas</button>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <h3>Subcategoría</h3>
+                            <div class="filter-options">
+                                <button class="filter-btn" data-subcategory="posicion-baja">P. Bajas</button>
+                                <button class="filter-btn" data-subcategory="posicion-alta">P. Altas</button>
+                                <button class="filter-btn" data-subcategory="un-brazo">Def. Un Brazo</button>
+                                <button class="filter-btn" data-subcategory="doble">Def. Dos Brazos</button>
+                                <button class="filter-btn" data-subcategory="pies-piernas">Def. Pies</button>
+                                <button class="filter-btn" data-subcategory="mano-cerrada">M. Cerrada</button>
+                                <button class="filter-btn" data-subcategory="mano-abierta">M. Abierta</button>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <h3>Nivel</h3>
+                            <div class="filter-options">
+                                <button class="filter-btn" data-level="basic">Básico</button>
+                                <button class="filter-btn" data-level="intermediate">Intermedio</button>
+                                <button class="filter-btn" data-level="advanced">Avanzado</button>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <h3>Altura</h3>
+                            <div class="filter-options">
+                                <button class="filter-btn" data-height="jodan">Jodan</button>
+                                <button class="filter-btn" data-height="chudan">Chudan</button>
+                                <button class="filter-btn" data-height="gedan">Gedan</button>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="filter-group">
-                        <h3>Subcategoría</h3>
-                        <button class="filter-btn" data-subcategory="posicion-baja">Posiciones Bajas</button>
-                        <button class="filter-btn" data-subcategory="posicion-alta">Posiciones Altas</button>
-                        <button class="filter-btn" data-subcategory="un-brazo">Defensas Un Brazo</button>
-                        <button class="filter-btn" data-subcategory="doble">Defensas/Ataques Dobles</button>
-                        <button class="filter-btn" data-subcategory="mano-cerrada">Mano Cerrada</button>
-                        <button class="filter-btn" data-subcategory="mano-abierta">Mano Abierta</button>
+                    <div class="active-filters">
+                        <h3>Filtros activos:</h3>
+                        <div class="filter-tags"></div>
+                        <button class="clear-filters">Limpiar filtros</button>
                     </div>
-
-                    <div class="filter-group">
-                        <h3>Nivel</h3>
-                        <button class="filter-btn" data-level="basic">Básico</button>
-                        <button class="filter-btn" data-level="intermediate">Intermedio</button>
-                        <button class="filter-btn" data-level="advanced">Avanzado</button>
-                    </div>
-
-                    <div class="filter-group">
-                        <h3>Altura</h3>
-                        <button class="filter-btn" data-height="jodan">Jodan (Alto)</button>
-                        <button class="filter-btn" data-height="chudan">Chudan (Medio)</button>
-                        <button class="filter-btn" data-height="gedan">Gedan (Bajo)</button>
-                    </div>
-                </div>
-
-                <div class="active-filters">
-                    <h3>Filtros activos:</h3>
-                    <div class="filter-tags"></div>
-                    <button class="clear-filters">Limpiar filtros</button>
                 </div>
             </div>
 
@@ -202,6 +219,20 @@
                     
                     <div class="subcategory">
                         <h3>Defensas con Pies y Piernas</h3>
+                        <div class="techniques-grid">
+                            <!-- Se cargarán dinámicamente con JS -->
+                        </div>
+                    </div>
+                    
+                    <div class="subcategory">
+                        <h3>Defensas Dobles</h3>
+                        <div class="techniques-grid">
+                            <!-- Se cargarán dinámicamente con JS -->
+                        </div>
+                    </div>
+                    
+                    <div class="subcategory">
+                        <h3>Variantes</h3>
                         <div class="techniques-grid">
                             <!-- Se cargarán dinámicamente con JS -->
                         </div>
@@ -267,6 +298,28 @@
                     
                     <div class="subcategory">
                         <h3>Golpes con Ambas Manos</h3>
+                        <div class="techniques-grid">
+                            <!-- Se cargarán dinámicamente con JS -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Taibuki waza / Golpes con otras partes del cuerpo -->
+                <div class="technique-category" id="taibuki-waza">
+                    <div class="category-header">
+                        <h2><i class="fas fa-fist-raised"></i> Taibuki Waza (Golpes con Otras Partes)</h2>
+                        <p>Técnicas de golpeo que utilizan diferentes partes del cuerpo como armas de impacto.</p>
+                    </div>
+                    
+                    <div class="subcategory">
+                        <h3>Golpes con Codo</h3>
+                        <div class="techniques-grid">
+                            <!-- Se cargarán dinámicamente con JS -->
+                        </div>
+                    </div>
+                    
+                    <div class="subcategory">
+                        <h3>Golpes con Otras Partes</h3>
                         <div class="techniques-grid">
                             <!-- Se cargarán dinámicamente con JS -->
                         </div>

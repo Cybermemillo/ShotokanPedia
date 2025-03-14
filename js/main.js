@@ -31,6 +31,19 @@ $(document).ready(function() {
     });
 });
 
+// Añadir funcionalidad para mostrar información sobre tipos de patadas
+$(document).ready(function() {
+    // Función para mostrar/ocultar las diferentes clasificaciones de patadas
+    $('.classification-group h4').click(function() {
+        $(this).next('ul').slideToggle();
+        $(this).toggleClass('active');
+    });
+    
+    // Inicializar la primera clasificación como visible
+    $('.classification-group ul:first').show();
+    $('.classification-group h4:first').addClass('active');
+});
+
 // Función para cargar contenido dinámicamente (ejemplo)
 function loadContent(section) {
     // Esta función podría usarse para cargar contenido sin recargar la página
